@@ -234,15 +234,17 @@ input:invalid, textarea:invalid {
 
 html {
   background: white url('../img/bg-body-mobile.jpg?1337982730') no-repeat top center;
+  background-attachment: fixed;
   height: 100%;
-  overflow: hidden;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 body {
-  min-height: 100%; }
+  margin: 0 auto;
+  min-height: 100%;
+  width: 85%; }
   body body {
     font-size: 100%;
     line-height: 1.3125em; }
@@ -252,51 +254,102 @@ body {
 img {
   max-width: 100%; }
 
-address {
-  font-style: normal;
-  /* margin:1.3125em; */
-  margin-top: 1.3125em;
-  margin-bottom: 1.3125em; }
+article {
+  padding-top: 1.3125em;
+  padding-bottom: 1.3125em; }
+  article address {
+    font-style: normal;
+    margin-bottom: 1.3125em;
+    *zoom: 1; }
+    article address:after {
+      content: "";
+      display: table;
+      clear: both; }
+    article address .contact dl {
+      margin: 0;
+      *zoom: 1; }
+      article address .contact dl:after {
+        content: "";
+        display: table;
+        clear: both; }
+      article address .contact dl dt {
+        color: #000;
+        font-weight: 700;
+        float: left;
+        width: 67px; }
+      article address .contact dl dd {
+        float: left; }
+  article p {
+    margin-bottom: 1.3125em; }
+    article p.fn {
+      color: #000000;
+      font-family: league-gothic-1, league-gothic-2, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+      text-transform: uppercase;
+      font-size: 2.625em;
+      line-height: 1em;
+      margin-bottom: 0.5em; }
+  article .description p {
+    font-size: 0.8125em;
+    line-height: 1.615384615385em;
+    margin-bottom: 1.615384615385em; }
+    article .description p:last-child {
+      margin-bottom: 0em; }
 
-h1 {
-  color: #000000;
-  font-family: league-gothic-1, league-gothic-2, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-  text-transform: uppercase;
-  font-size: 2.625em;
-  line-height: 1em;
-  margin-bottom: 0.5em; }
+@media only screen and (min-width: 480px) {
+  body {
+    width: 94%; }
 
-p {
-  margin-bottom: 1.3125em; }
-
-dl {
-  margin: 0;
-  *zoom: 1; }
-  dl:after {
-    content: "";
-    display: table;
-    clear: both; }
-  dl dt {
-    color: #000;
-    font-weight: 700;
+  article address {
+    margin-bottom: 0em; }
+    article address .contact {
+      float: left; }
+  article p.adr {
     float: left;
-    width: 5em; }
-
+    margin-right: 7.142857142857%; } }
 /*/mediaquery*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
+  body {
+    width: 90%;
+    font-size: 1.3125em;
+    line-height: 1.52380952381em; }
+
+  article {
+    padding-top: 1.52380952381em;
+    padding-bottom: 1.52380952381em; }
+    article address {
+      margin-bottom: 0em; }
+      article address .contact dl dt {
+        width: 84px; }
+    article p {
+      margin-bottom: 1.52380952381em; }
+      article p.fn {
+        font-size: 3.047619047619em;
+        line-height: 1.0em; }
+      article p.adr {
+        margin-right: 5.263157894737%; }
+    article .description p {
+      font-size: 1em;
+      line-height: 1.52380952381em;
+      margin-bottom: 1.52380952381em; } }
+/*/mediaquery*/
+/*/mediaquery*/
+@media only screen and (min-width: 960px) {
   html.backgroundsize {
     background-image: url('../img/bg-body.jpg?1337982730');
     background-position: top right; }
 
+  article .description {
+    width: 55%; } }
+/*/mediaquery*/
+@media only screen and (min-width: 1024px) {
   body {
-    font-size: 1.3125em;
-    line-height: 1.52380952381em; }
+    width: 992px; }
 
-  address h1 {
-    font-size: 3.047619047619em;
-    line-height: 1.0em; }
-  address p {
-    margin-bottom: 1.52380952381em; } }
+  article address .contact dl dt {
+    width: 84px; }
+
+  article p.adr {
+    margin-right: 32px; } }
 /*/mediaquery*/
 @media print {
   * {

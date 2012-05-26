@@ -6,15 +6,18 @@
 
 html {
   background: #ffffff image-url('bg-body-mobile.jpg') no-repeat top center;
+  background-attachment: fixed;
   height: 100%;
-  overflow: hidden;
   @include background-size(cover);
 }
 
 body {
+  margin: 0 auto;
   min-height: 100%;
+  width: 85%; // ~288px
   @include establish-baseline;
   //@include debug-vertical-alignment('bg-vr-21px.png');
+  //@include debug-vertical-alignment('bg-vr-32px.png');
 }
 
 img { max-width: 100%; }

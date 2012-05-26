@@ -7,7 +7,7 @@
   <meta charset="utf-8">
 
   <title>Stefan Frede — Pur</title>
-  <meta name="description" content="Just an online vcard.">
+  <meta name="description" content="It's about me!">
 
   <meta name="viewport" content="width=device-width">
 
@@ -21,30 +21,40 @@
   <script type="text/javascript" src="/mint/?js"></script>
 </head>
 
-<body class="backstretch">
+<body>
   <div id="main" role="main">
-    <address class="vcard">
-      <h1 class="fn">Stefan Frede</h1>
-      <p class="adr">
-        <span class="type hidden">Work</span>
-        <span class="street-address">Steinsdorfstr. 22</span><br />
-        <span class="postal-code">80538</span>&nbsp;<span class="locality">München</span><br />
-        <span class="country-name">Germany</span>
-      </p>
-      <dl class="tel">
-        <dt>Mobil</dt>
-        <dd>
-          <span class="type hidden">Mobile</span><a class="plain" href="tel:0049-170-5434476">+49&nbsp;(0)170&nbsp;5&nbsp;43&nbsp;44&nbsp;76</a>
-        </dd>
-      </dl>
-      <dl>
-        <dt>E-Mail</dt>
-        <dd class="email">
-          <a id="mailto" href="mailto:public[at]frede[dot]biz">public<span class="visuallyhidden">-SPAM-PROTECTION</span>@frede.biz</a>
-        </dd>
-      </dl>
-    </address>
-  </div>
+    <article role="article">
+      <address class="vcard">
+        <p class="fn"><strong>Stefan Frede</strong></p>
+        <p class="adr">
+          <span class="type visuallyhidden">Work</span>
+          <span class="street-address">Steinsdorfstr. 22</span><br />
+          <span class="postal-code">80538</span>&nbsp;<span class="locality">Munich</span><br />
+          <span class="country-name">Germany</span>
+        </p>
+        <div class="contact">
+          <dl class="tel">
+            <dt>Mobile</dt>
+            <dd>
+              <span class="type visuallyhidden">Mobile</span><a class="plain" href="tel:0049-170-5434476">+49&nbsp;(0)170&nbsp;5&nbsp;43&nbsp;44&nbsp;76</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Email</dt>
+            <dd class="email">
+              <a id="mailto" href="mailto:public%5Bat%5Dfrede%5Bdot%5Dbiz">public<span class="visuallyhidden">-SPAM-PROTECTION</span>@frede.biz</a>
+            </dd>
+          </dl>
+        </div><!-- /.contact -->
+      </address>
+      <div class="description">
+        <p>Hi. I'm a freelance front-end web developer living in Munich.</p>
+        <p>I have been working in this business for almost 10 years now and I'm specialised in the conception and creation of functional, content sensitive web pages using HTML5, CSS3 (Compass + SASS preferred) and Javascript. My approach is to look ahead, not into the past. That's why I develop web pages with the rich feature set of modern browsers in mind while making sure that older browsers with a more limited feature set still display the website as best as possible.</p>
+        <p>I have also been working with a couple of Content Management Systems, preferably ExpressionEngine.</p>
+        <p>For the rare occasions that I'm not standing in front of my MacBook Pro I spend my time climbing and running.</p>
+      </div><!-- /.description -->
+    </article>
+  </div><!-- /#main -->
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>

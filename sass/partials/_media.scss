@@ -6,32 +6,87 @@
 
 @media only screen and (min-width: 480px) {
   // Style adjustments for viewports 480px and over go here
-  
+  body {
+    width: 94%; // ~448px
+  }
+  article {
+    address { 
+      @include margin-trailer(0);
+      .contact {
+        float: left;
+      }
+    }
+    p {
+      &.adr {
+        float: left;
+        margin-right: 7.142857142857%; // (32px / 448px) * 100
+      }
+    }
+  }
+}/*/mediaquery*/
+
+@media only screen and (min-width: 640px) {
+  // Style adjustments for viewports 640px and over go here
+  body {
+    width: 90%; // ~608px
+    @include adjust-font-size-to(21px, 1.52380952380952, 16px);
+  }
+  article {
+    @include padding-leader(1.52380952380952, 21px);
+    @include padding-trailer(1.52380952380952, 21px);
+    address { 
+      @include margin-trailer(0);
+      .contact {
+        dl dt {
+          width: 84px;
+        }
+      }
+    }
+    p {
+      &.fn {
+        @include adjust-font-size-to(64px, 3.04761904761905, 21px);
+      }
+      &.adr {
+        margin-right: 5.263157894737%; // (32px / 608px) * 100
+      }
+      @include margin-trailer(1.52380952380952, 21px);
+    }
+    .description {
+      p {
+        @include adjust-font-size-to(21px, 1.52380952380952, 21px);
+        @include margin-trailer(1.52380952380952, 21px);
+      }
+    }
+  }
 }/*/mediaquery*/
 
 @media only screen and (min-width: 768px) {
   // Style adjustments for viewports 768px and over go here
   
+}/*/mediaquery*/
+
+@media only screen and (min-width: 960px) {
+  // Style adjustments for viewports 960px and over go here
   html.backgroundsize {
     background: {
       image: image-url('bg-body.jpg');
       position: top right;
     }
   }
-
-  body {
-    @include adjust-font-size-to(21px, 1.52380952380952, 16px);
-  }
-  
-  address {
-    //margin: 1.523809524em;
-    h1 {
-      @include adjust-font-size-to(64px, 3.04761904761905, 21px);
-    }  
-    p {
-      @include margin-trailer(1.52380952380952, 21px);
+  article {
+    .description {
+      width: 55%;
     }
   }
+}/*/mediaquery*/
+
+@media only screen and (min-width: 1024px) {
+  // Style adjustments for viewports 1024px and over go here
+  body {
+    width: 992px;
+  }
+  article address .contact dl dt { width: 84px; }
+  article p.adr { margin-right: 32px; }
 }/*/mediaquery*/
 
 // Print styles
