@@ -1,0 +1,12 @@
+@import "reset";
+@import "fonts";
+@import "styles";
+@import "helpers";
+@import "media";
+
+@mixin html5-boilerplate {
+  @include html5-boilerplate-reset;
+  @include html5-boilerplate-fonts;
+  @include html5-boilerplate-styles;
+  @include html5-boilerplate-helpers;
+}

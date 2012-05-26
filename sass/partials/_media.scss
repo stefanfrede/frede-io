@@ -1,0 +1,41 @@
+//
+// Placeholder media queries for responsive design. Modify as design requires.
+// These follow after, and will override, the primary ('mobile first') styles
+// The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill
+//
+
+@media only screen and (min-width: 480px) {
+  // Style adjustments for viewports 480px and over go here
+  
+}/*/mediaquery*/
+
+@media only screen and (min-width: 768px) {
+  // Style adjustments for viewports 768px and over go here
+  
+  html.backgroundsize {
+    background: {
+      image: image-url('bg-body.jpg');
+      position: top right;
+    }
+  }
+
+  body {
+    @include adjust-font-size-to(21px, 1.52380952380952, 16px);
+  }
+  
+  address {
+    //margin: 1.523809524em;
+    h1 {
+      @include adjust-font-size-to(64px, 3.04761904761905, 21px);
+    }  
+    p {
+      @include margin-trailer(1.52380952380952, 21px);
+    }
+  }
+}/*/mediaquery*/
+
+// Print styles
+// Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+@media print {
+  @include media-print;
+}

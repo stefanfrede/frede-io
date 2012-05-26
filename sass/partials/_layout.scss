@@ -1,0 +1,20 @@
+//-----------------------------------
+// Layout specific styles
+//-----------------------------------
+
+* { @include box-sizing(border-box); }
+
+html {
+  background: #ffffff image-url('bg-body-mobile.jpg') no-repeat top center;
+  height: 100%;
+  overflow: hidden;
+  @include background-size(cover);
+}
+
+body {
+  min-height: 100%;
+  @include establish-baseline;
+  //@include debug-vertical-alignment('bg-vr-21px.png');
+}
+
+img { max-width: 100%; }

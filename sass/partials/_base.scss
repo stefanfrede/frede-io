@@ -1,0 +1,48 @@
+//-----------------------------------------------
+// Basic styles
+//-----------------------------------------------
+
+body {
+  color: #333;
+  color: rgba(0, 0, 0, .8);
+  font-family: museo-sans-1, museo-sans-2, 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+a {
+  &:link, &:visited, &:active, &:focus {
+    color: #333;
+    color: rgba(0, 0, 0, .8);
+    @include single-transition(color, .4s, linear, .1s);
+  }
+  &.plain {
+    &:link, &:visited, &:active, &:focus {
+      text-decoration:none;
+    }
+  }
+  &:hover  {
+    color: #cc0099;
+    color: rgba(204, 0, 153, .8);
+  }
+  &:focus           { outline: thin dotted; }
+  &:hover, &:active { outline: 0; }
+}
+
+
+strong, th {
+  font-weight: bold;
+}
+
+small {
+  @include font-size(11px);  // approx 85% when base-font-size eq 13px
+}
+
+input:valid, textarea:valid {}
+input:invalid, textarea:invalid {
+  @include border-radius(1px);
+  @include single-box-shadow(#f0dddd, 0, 0, 5px, 0);
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
