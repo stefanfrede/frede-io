@@ -45,3 +45,10 @@ article {
     }
   }
 }
+.lt-ie9 {
+  article {
+    .description {
+      width: 444px;
+    }
+  }
+}

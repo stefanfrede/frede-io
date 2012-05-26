@@ -295,6 +295,9 @@ article {
     article .description p:last-child {
       margin-bottom: 0em; }
 
+.lt-ie9 article .description {
+  width: 444px; }
+
 @media only screen and (min-width: 480px) {
   body {
     width: 94%; }
