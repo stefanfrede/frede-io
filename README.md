@@ -1,4 +1,4 @@
 frede
 =====
 
-Personal homepage
+My personal homepage.
