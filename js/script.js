@@ -6,32 +6,10 @@
 /* trigger when page is ready */
 $(document).ready(function (){
   if (!Modernizr.backgroundsize){
-    $.backstretch("/_/img/bg-body.jpg", {speed: 150});
+    $.backstretch("/img/bg-body.jpg", {speed: 150});
   }
   $("#mailto").click(function() {
     location.href='mailto:public@frede.biz';
     return false;
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
