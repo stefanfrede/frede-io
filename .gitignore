@@ -19,14 +19,6 @@
 nbproject
 Thumbs.db
 
-# Dreamweaver added files
-_notes
-dwsync.xml
-
-# Komodo
-*.komodoproject
-.komodotools
-
 # Folders to ignore
 .hg
 .svn
@@ -43,4 +35,5 @@ build/config/buildinfo.properties
 mint
 fever
 feeder
+yourls
 
