@@ -182,8 +182,10 @@ nav ul, nav li {
 body {
   color: #333;
   color: rgba(0, 0, 0, 0.8);
-  font-family: museo-sans-1, museo-sans-2, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-  font-weight: 300; }
+  /* font-family: museo-sans-1, museo-sans-2, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif; */
+  font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+  /* font-weight: 300; } */
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -313,8 +315,10 @@ article {
 @media only screen and (min-width: 640px) {
   body {
     width: 90%;
-    font-size: 1.3125em;
-    line-height: 1.52380952381em; }
+    /* font-size: 1.3125em; */
+    font-size: 1.5em;
+    /* line-height: 1.52380952381em; } */
+    line-height: 1.33333333333333em; }
 
   article {
     padding-top: 1.52380952381em;
@@ -326,13 +330,16 @@ article {
     article p {
       margin-bottom: 1.52380952381em; }
       article p.fn {
-        font-size: 3.047619047619em;
+        /* font-size: 3.047619047619em; */
+        font-size: 3em;
         line-height: 1.0em; }
       article p.adr {
         margin-right: 5.263157894737%; }
     article .description p {
-      font-size: 1em;
-      line-height: 1.52380952381em;
+      /* font-size: 1em; */
+      font-size: 0.85714285714286em;
+      /* line-height: 1.52380952381em; */
+      line-height: 1.33333333333333em;
       margin-bottom: 1.52380952381em; } }
 /*/mediaquery*/
 /*/mediaquery*/
