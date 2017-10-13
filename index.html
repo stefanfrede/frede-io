@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
   <title>Stefan Frede — Pure</title>
   <meta name="description" content="It's about me!">
+
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css">
 
-  <script type="text/javascript" src="js/vendor/modernizr-latest.js"></script>
-
-  <script type="text/javascript">
-    Modernizr.load([{
-      test: Modernizr.fontface,
-      yep : 'http://use.typekit.com/yjx2rqj.js',
-      complete: function() {
-        try { Typekit.load(); } catch(e) {};
-      }
-    }]);
-  </script>
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
+
 <body>
   <div id="main" role="main">
     <article role="article">
@@ -43,22 +36,28 @@
               <a id="mailto" href="mailto:public%5Bat%5Dfrede%5Bdot%5Dbiz">public<span class="visuallyhidden">-SPAM-PROTECTION</span>@frede.biz</a>
             </dd>
           </dl>
-        </div>
+        </div><!-- /.contact -->
       </address>
       <div class="description">
         <p>Hi. I'm a freelance front-end web developer living in Munich.</p>
-        <p>I have been working in this business for almost 10 years now and I'm specialised in the conception and creation of functional, content sensitive web pages using <strong>HTML5</strong>, <strong>CSS3</strong> (Compass + SASS preferred) and <strong>Javascript</strong>. My approach is to look ahead, not into the past. That's why I develop web pages with the rich feature set of modern browsers in mind while making sure that older browsers with a more limited feature set still display the website as best as possible.</p>
-        <p>For the rare occasions that I'm not standing in front of my MacBook Air I spend my time climbing, hiking and running.</p>
-      </div>
+        <p>I have been working in this business for almost 10 years now and I'm specialised in the conception and creation of functional, content sensitive web pages using <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>JavaScript</strong>. My approach is to look ahead, not into the past. That's why I develop web pages with the rich feature set of modern browsers in mind while making sure that older browsers with a more limited feature set still display the website as best as possible.</p>
+        <p>For the rare occasions that I'm not standing in front of my MacBook Pro I spend my time hiking and running.</p>
+      </div><!-- /.description -->
     </article>
-  </div>
+  </div><!-- /#main -->
 
-  <!--
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-  -->
-  <script type="text/javascript" src="js/vendor/jquery-latest.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
-  <script type="text/javascript" src="js/main.js"></script>
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!--[if (gte IE 7)&(lte IE 8)&(!IEMobile)]>
+    <script src="js/libs/jquery-extra-selectors.js"></script>
+    <script src="js/libs/respond.min.js"></script>
+    <script src="js/libs/selectivizr-min.js"></script>
+  <![endif]-->
 </body>
 </html>
