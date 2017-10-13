@@ -1,39 +1,13 @@
-# Numerous always-ignore extensions
-*.diff
-*.err
-*.orig
-*.log
-*.rej
-*.swo
-*.swp
-*.vi
-*~
-*.sass-cache
-
-# OS or Editor folders
 .DS_Store
-.cache
-.project
-.settings
-.tmproj
-nbproject
-Thumbs.db
-
-# Folders to ignore
-.hg
-.svn
-.CVS
-intermediate
-publish
-.idea
-
-# build script local files
-build/buildinfo.properties
-build/config/buildinfo.properties
-
-# More Folders to ignore
-mint
-fever
-feeder
-yourls
-
+*.sw[nop]
+.bundle
+.byebug_history
+.env
+db/*.sqlite3
+log/*.log
+rerun.txt
+tags
+!tags/
+tmp/**/*
+!tmp/cache/.keep
+*.pyc
