@@ -1,4 +1,4 @@
 frede
 =====
 
-My personal homepage.
+This is my personal homepage which is in dire need of an update.
