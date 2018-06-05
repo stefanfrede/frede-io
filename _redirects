@@ -1,0 +1,3 @@
+# Redirect domain aliases to primary domain
+https://www.frede.biz/* https://www.frede.io/:splat 301!
+https://frede.biz/* https://www.frede.io/:splat 301!
