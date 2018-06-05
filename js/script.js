@@ -9,7 +9,7 @@ $(document).ready(function (){
     $.backstretch("/img/bg-body.jpg", {speed: 150});
   }
   $("#mailto").click(function() {
-    location.href='mailto:public@frede.biz';
+    location.href='mailto:stefan@frede.info';
     return false;
   });
 });
