@@ -299,6 +299,26 @@ article {
     article .description p:last-child {
       margin-bottom: 0em; }
 
+.cv {
+  align-items: center;
+  display: flex;
+}
+
+.cv > a {
+  display: flex;
+  margin-left: 0.75em;
+  transition: fill 0.4s linear 0.1s; }
+}
+
+.cv > a:hover > img {
+  fill: #cc0099;
+}
+
+.cv > a > img {
+  height: 1em;
+  width: 1em;
+}
+
 .lt-ie9 article .description {
   width: 444px; }
 
