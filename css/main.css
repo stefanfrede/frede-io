@@ -38,10 +38,12 @@ html {
 body {
   background-color: var(--background);
   color: var(--on-surface);
+  display: -ms-grid;
   display: grid;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -ms-grid-rows: 1fr 5.5rem;
   grid-template-rows: 1fr 5.5rem;
   line-height: 1.5;
   margin: 0;
@@ -81,10 +83,7 @@ ul {
   padding: 0;
 }
 
-li {
-  margin: 0;
-}
-
+li,
 p {
   margin: 0;
 }
@@ -97,6 +96,7 @@ img {
 a:link,
 a:visited {
   color: var(--on-surface-high);
+  -webkit-text-decoration-color: var(--on-surface);
   text-decoration-color: var(--on-surface);
   transition-duration: 0.25s;
   transition-property: color;
@@ -107,6 +107,7 @@ a:focus,
 a:active,
 a:hover {
   color: var(--primary);
+  -webkit-text-decoration-color: var(--on-surface);
   text-decoration-color: var(--on-surface);
 }
 
@@ -133,6 +134,7 @@ footer a:link,
 footer a:visited {
   color: var(--on-surface-medium);
   text-decoration: none;
+  -webkit-text-decoration-color: var(--on-surface-medium);
   text-decoration-color: var(--on-surface-medium);
 }
 
@@ -147,14 +149,13 @@ footer a:hover {
   justify-content: space-between;
 }
 
-/* Change the text selection colour */
-::selection {
+::-moz-selection {
   background-color: var(--secondary-light);
   color: var(--on-secondary);
   text-shadow: none;
 }
 
-::-moz-selection {
+::selection {
   background-color: var(--secondary-light);
   color: var(--on-secondary);
   text-shadow: none;
@@ -221,6 +222,8 @@ footer a:hover {
 }
 
 .introduction > p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
 }
 
@@ -267,12 +270,12 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
-  /* 18 pixels */
   html {
     font-size: 112.5%;
   }
 
   body {
+    -ms-grid-rows: 1fr 4.8888rem;
     grid-template-rows: 1fr 4.8888rem;
     line-height: 1.3333;
   }
@@ -340,8 +343,10 @@ footer a:hover {
 @media (min-width: 992px) {
   @supports (display: grid) {
     main {
+      display: -ms-grid;
       display: grid;
       grid-column-gap: 1.7777rem;
+      -ms-grid-columns: 20rem 1.7777rem 1fr;
       grid-template-columns: 20rem 1fr;
     }
 
@@ -363,22 +368,17 @@ footer a:hover {
   }
 }
 
-/**
- * Remove all animations and transitions for people that prefer not to see them
- */
 @media (prefers-reduced-motion: reduce) {
   * {
+    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
 }
 
-/*!
- * Font Awesome Pro 5.11.2 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- */
 .fa,
 .fas,
 .far,
@@ -433,10 +433,6 @@ footer a:hover {
   content: '\f09b';
 }
 
-/*!
- * Font Awesome Pro 5.11.2 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- */
 @font-face {
   font-display: auto;
   font-family: 'Font Awesome 5 Brands';
@@ -454,10 +450,6 @@ footer a:hover {
   font-family: 'Font Awesome 5 Brands';
 }
 
-/*!
- * Font Awesome Pro 5.11.2 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- */
 @font-face {
   font-display: auto;
   font-family: 'Font Awesome 5 Pro';
