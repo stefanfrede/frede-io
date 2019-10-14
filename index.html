@@ -1,82 +1,186 @@
 <!DOCTYPE html>
-
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Stefan Frede — Pure</title>
-  <meta name="description" content="It's about me!">
+  <title>
+    Stefan Frede
+  </title>
 
-  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="This is the website of Stefan Frede, a front-end developer from Germany based in Hamburg.">
+  <meta name="author" content="Stefan Frede">
+  <meta name="robots" content="index,follow">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <link href="/css/main.css" rel="stylesheet">
+
+  <!-- I see you want a peek at the source code. -->
+  <!-- If you have any questions, feel free to write to me: -->
+  <!-- contact at frede dot io -->
 </head>
-
 <body>
-  <div id="main" role="main">
-    <article role="article">
-      <address class="vcard">
-        <p class="fn"><strong>Stefan Frede</strong></p>
-        <p class="adr">
-          <span class="type visuallyhidden">Work</span>
-          <span class="street-address">Ehrenbergstr. 16a</span><br />
-          <span class="extended-address">Scanbox #03611</span><br />
-          <span class="postal-code">10245</span>&nbsp;<span class="locality">Berlin</span><br />
-          <span class="country-name">Germany</span>
-        </p>
-        <div class="contact">
-          <dl>
-            <dt>Email</dt>
-            <dd class="email">
-              <a id="mailto" href="mailto:stefan%5Bat%5Dfrede%5Bdot%5Dinfo">
-                stefan<span class="visuallyhidden">-SPAM-PROTECTION</span>@frede.info
-              </a>
-            </dd>
-          </dl>
+  <main role="main">
+    <section>
+      <address class="h-card">
+        <picture>
+          <source
+            srcset="/img/photo-640w.webp 640w,
+                    /img/photo-320w.webp 320w,
+                    /img/photo-160w.webp 160w"
+            sizes="160px"
+            type="image/webp">
+          <source
+            srcset="/img/photo-640w.jpg 640w,
+                    /img/photo-320w.jpg 320w,
+                    /img/photo-160w.jpg 160w"
+            sizes="160px"
+            type="image/jpeg">
+          <img
+            class="h-card__photo u-photo"
+            src="/img/photo-160w.jpg"
+            alt="Stefan Frede">
+        </picture>
+        <header>
+          <h1 class="p-name">
+            Stefan Frede
+          </h1>
+          <h2 class="p-job-title">
+            Front-end developer
+          </h2>
+        </header>
+        <div class="h-card__contact-data ">
+          <p class="p-adr">
+            <span class="p-street-address">
+              Zeißstr. 65
+            </span><br />
+            <span class="p-postal-code">
+              22765
+            </span>
+            <span class="p-locality">
+              Hamburg
+            </span><br />
+            <span class="p-country-name">
+              Germany
+            </span>
+          </p>
+          <p>
+            <a class="p-tel" href="tel:+491705434476">
+              +49 170 5434476
+            </a>
+            <a class="u-email js-email">
+              contact<i aria-hidden="true" class="far fa-at fa-sm fa-fw"></i
+              ><span class="sr-only">@</span>frede.io
+            </a>
+            <a class="u-url" href="https://www.frede.io/">
+              www.frede.io
+            </a>
+          </p>
         </div>
       </address>
-      <p class="cv">
-        <b>Curriculum vitae</b>
+      <div class="download">
         <a
-          href="https://resume.frede.io/resume_stefan_frede.pdf"
-          target="_blank">
-          <img src="./img/file-pdf.svg"  alt="PDF Icon" />
+          class="download__btn"
+          href="/assets/resume_stefan_frede.pdf"
+          download>
+          <i aria-hidden="true" class="far fa-file-pdf"></i
+          ><span class="sr-only">PDF file</span
+          >Download Resume
+        </a>
+        <small>
+          (37 <abbr title="Kilobytes">KB</abbr> PDF)
+        </small>
+      </p>
+    </section>
+    <section>
+      <article class="introduction">
+        <p>
+          Hello, I'm Stefan. I'm a freelance front-end developer from Germany
+          based in Hamburg.
+        </p>
+        <p>
+          As an advocate for a free internet which everyone should be able to
+          use everywhere and without restrictions, I try to reduce the
+          complexity of modern "best practices".
+        </p>
+        <p>
+          My focus is on HTML, CSS, progressive enhancement and accessibility.
+          When I use JavaScript, I like to limit myself to browser APIs whenever
+          possible. The web has come a long way. Features that used to require
+          libraries or frameworks can now easily be implemented using native
+          JavaScript. Such an approach keeps the codebase small, avoids bugs,
+          and greatly improves performance.
+        </p>
+        <p>
+          Since 2004 I have been working as a full-time freelancer.
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <div class="footer__inner">
+      <p>
+        <i aria-hidden="true" class="far fa-copyright fa-fw"></i>
+        <span class="sr-only">Copryright</span>
+        <span class="js-year">2019</span>
+        <a class="js-email">
+          Stefan Frede
         </a>
       </p>
-      <div class="description">
-        <p>
-          Hi there, I am Stefan. I am a freelance front-end developer from
-          Germany based in Hamburg. Because I am travelling while
-          working, I can be found all over Europe.
-        </p>
-        <p>
-          I have been working in this business for <i>over 15 years</i> now and
-          I am specialised in the conception and creation of functional, content
-          sensitive web pages. My approach is to look ahead, not into the past.
-          That's why I develop web pages with the rich feature set of modern
-          browsers in mind while making sure that older browsers with a more
-          limited feature set still display the website as best as possible.
-        </p>
-        <p>
-          For the rare occasions that I am not in front of my computer, I spend
-          my time hiking and running.
-        </p>
-      </div>
-    </article>
-  </div>
+      <ul class="social-bar">
+        <li class="social-bar__item social-bar__item--linkedin">
+          <a href="https://www.linkedin.com/in/stefanfrede/" target="_blank">
+            <i aria-hidden="true" class="fab fa-linkedin fa-lg"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li class="social-bar__item social-bar__item--xing">
+          <a href="https://www.xing.com/profile/Stefan_Frede2" target="_blank">
+            <i aria-hidden="true" class="fab fa-xing fa-lg"></i>
+            <span class="sr-only">Xing</span>
+          </a>
+        </li>
+        <li class="social-bar__item social-bar__item--github">
+          <a href="https://github.com/stefanfrede" target="_blank">
+            <i aria-hidden="true" class="fab fa-github fa-lg"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    /**
+     * Email obfuscator script 2.1 by Tim Williams, University of Arizona
+     * Random encryption key feature coded by Andrew Moulden
+     * This code is freeware provided these four comment lines remain intact
+     * A wizard to generate this code is at http://www.jottings.com/obfuscator/
+     */
+    const coded = 'NP29iN9@pxZ7Z.LP';
+    const key = 'nG8lYLjzT5uwEmAb2Wc3SfHQD6qdv1MCUoNaOprVtRe740kyJPgiXKxF9BZIsh';
+    const shift = coded.length;
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    let ltr = '';
+    let link = '';
 
-  <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end scripts -->
+    for (let i = 0; i < coded.length; i++) {
+      if (key.indexOf(coded.charAt(i)) === -1) {
+        ltr = coded.charAt(i);
+        link = link + ltr;
+      } else {
+        ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
+        link = link + key.charAt(ltr);
+      }
+    }
+
+    const emails = document.querySelectorAll('.js-email');
+    emails.forEach(email => email.setAttribute('href', `mailto:${link}`));
+
+    document.querySelector('.js-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
