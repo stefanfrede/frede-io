@@ -338,26 +338,28 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
-  main {
-    display: grid;
-    grid-column-gap: 1.7777rem;
-    grid-template-columns: 20rem 1fr;
-  }
+  @supports (display: grid) {
+    main {
+      display: grid;
+      grid-column-gap: 1.7777rem;
+      grid-template-columns: 20rem 1fr;
+    }
 
-  footer {
-    padding: 1.7777rem 0;
-  }
+    footer {
+      padding: 1.7777rem 0;
+    }
 
-  .footer__inner {
-    margin: 0 0 0 21.7777rem;
-  }
+    .footer__inner {
+      margin: 0 0 0 21.7777rem;
+    }
 
-  section + section {
-    margin-top: 0;
-  }
+    section + section {
+      margin-top: 0;
+    }
 
-  .introduction {
-    margin: 15.1111rem 0 0;
+    .introduction {
+      margin: 15.1111rem 0 0;
+    }
   }
 }
 
