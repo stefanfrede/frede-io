@@ -1,0 +1,59 @@
+{
+  "name": "stefanfrede-website",
+  "version": "1.0.0",
+  "description": "stefan frede's website",
+  "engines": {
+    "node": "12.x.x",
+    "npm": "6.x.x"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:stefanfrede/website.git"
+  },
+  "keywords": [
+    "Stefan Frede",
+    "Website"
+  ],
+  "author": {
+    "name": "Stefan Frede",
+    "email": "stefan@frede.io"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://gitlab.com/stefanfrede/website/issues"
+  },
+  "homepage": "https://www.frede.io/",
+  "browserslist": [
+    "default"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^6.5.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.7",
+    "lint-staged": "^9.4.0",
+    "prettier": "^1.18.2",
+    "stylelint": "^11.1.1",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-order": "^3.0.0"
+  },
+  "dependencies": {}
+}

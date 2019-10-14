@@ -1,0 +1,496 @@
+:root {
+  --primary: hsl(330, 79%, 56%);
+  --primary-bg: hsl(330, 79%, 56%);
+  --on-primary: hsl(216, 33%, 97%);
+
+  --primary-dark: hsl(326, 90%, 39%);
+  --primary-light: hsl(336, 100%, 77%);
+
+  --secondary: hsl(178, 78%, 57%);
+  --secondary-bg: hsl(178, 78%, 57%);
+  --on-secondary: hsl(210, 24%, 16%);
+
+  --secondary-dark: hsl(182, 85%, 39%);
+  --secondary-light: hsl(174, 96%, 78%);
+
+  --surface: hsl(216, 33%, 97%);
+  --on-surface: hsl(210, 24%, 16%);
+  --on-surface-high: hsl(209, 20%, 25%);
+  --on-surface-medium: hsl(211, 10%, 53%);
+
+  --background: hsl(216, 33%, 97%);
+
+  --linkedin: hsl(201, 100%, 35%);
+  --xing: hsl(181, 96%, 20%);
+  --github: hsl(0, 0%, 20%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-surface);
+  display: grid;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  grid-template-rows: 1fr 5.5rem;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+h1 {
+  color: var(--on-surface-high);
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-size: 2.25rem;
+  font-style: italic;
+  letter-spacing: -0.05rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+
+h2 {
+  color: var(--primary-dark);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+small {
+  color: var(--on-surface-medium);
+  font-size: 0.667rem;
+  line-height: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a:link,
+a:visited {
+  color: var(--on-surface-high);
+  text-decoration-color: var(--on-surface);
+  transition-duration: 0.25s;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+}
+
+a:focus,
+a:active,
+a:hover {
+  color: var(--primary);
+  text-decoration-color: var(--on-surface);
+}
+
+main {
+  background-color: var(--surface);
+  padding: 2rem 1rem;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+header {
+  margin: 1rem 0;
+}
+
+footer {
+  background: var(--surface);
+  color: var(--on-surface-medium);
+  padding: 2rem 1rem;
+}
+
+footer a:link,
+footer a:visited {
+  color: var(--on-surface-medium);
+  text-decoration: none;
+  text-decoration-color: var(--on-surface-medium);
+}
+
+footer a:focus,
+footer a:active,
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Change the text selection colour */
+::selection {
+  background-color: var(--secondary-light);
+  color: var(--on-secondary);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: var(--secondary-light);
+  color: var(--on-secondary);
+  text-shadow: none;
+}
+
+.h-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+.h-card__photo {
+  border: 1px solid var(--surface);
+  border-radius: 9999px;
+  margin-top: -1px;
+}
+
+.h-card__contact-data {
+  display: flex;
+}
+
+.h-card__contact-data > p {
+  flex: 1 0 auto;
+}
+
+.h-card__contact-data > p:first-child {
+  margin-right: 1.5rem;
+}
+
+.h-card__contact-data > p:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.download {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.download__btn:link,
+.download__btn:visited {
+  background-color: var(--primary);
+  border-radius: 9999px;
+  color: var(--on-primary);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+}
+
+.download__btn:focus,
+.download__btn:active,
+.download__btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.download__btn > i {
+  margin-right: 0.5rem;
+}
+
+.introduction > p {
+  hyphens: auto;
+}
+
+.introduction > p + p {
+  margin-top: 1rem;
+}
+
+.social-bar {
+  display: flex;
+}
+
+.social-bar > .social-bar__item + .social-bar__item {
+  margin-left: 1rem;
+}
+
+.social-bar a {
+  text-decoration: none;
+}
+
+.social-bar__item--linkedin > a:focus,
+.social-bar__item--linkedin > a:active,
+.social-bar__item--linkedin > a:hover {
+  color: var(--linkedin);
+}
+
+.social-bar__item--xing > a:focus,
+.social-bar__item--xing > a:active,
+.social-bar__item--xing > a:hover {
+  color: var(--xing);
+}
+
+.social-bar__item--github > a:focus,
+.social-bar__item--github > a:active,
+.social-bar__item--github > a:hover {
+  color: var(--github);
+}
+
+@media (min-width: 480px) {
+  .introduction,
+  .footer__inner {
+    margin: 0 auto;
+    max-width: 33rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* 18 pixels */
+  html {
+    font-size: 112.5%;
+  }
+
+  body {
+    grid-template-rows: 1fr 4.8888rem;
+    line-height: 1.3333;
+  }
+
+  h1 {
+    letter-spacing: -0.04rem;
+    line-height: 2.6666rem;
+  }
+
+  h2 {
+    letter-spacing: 0.04rem;
+    line-height: 1.7777rem;
+  }
+
+  small {
+    line-height: 0.8888rem;
+  }
+
+  main {
+    padding: 1.7777rem 0;
+  }
+
+  section + section {
+    margin-top: 1.7777rem;
+  }
+
+  header {
+    margin: 0.8888rem 0;
+  }
+
+  footer {
+    padding: 1.7777rem 0.8888rem;
+  }
+
+  .footer__inner {
+    max-width: 30rem;
+  }
+
+  .h-card {
+    margin-bottom: 1.7777rem;
+  }
+
+  .h-card__contact-data > p:first-child {
+    margin-right: 1.3333rem;
+  }
+
+  .download__btn:link,
+  .download__btn:visited {
+    padding: 0.4444rem 0.8888rem;
+  }
+
+  .download__btn > i {
+    margin-right: 0.4444rem;
+  }
+
+  .introduction {
+    max-width: 30rem;
+  }
+
+  .introduction > p + p {
+    margin-top: 0.8888rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    display: grid;
+    grid-column-gap: 1.7777rem;
+    grid-template-columns: 20rem 1fr;
+  }
+
+  footer {
+    padding: 1.7777rem 0;
+  }
+
+  .footer__inner {
+    margin: 0 0 0 21.7777rem;
+  }
+
+  section + section {
+    margin-top: 0;
+  }
+
+  .introduction {
+    margin: 15.1111rem 0 0;
+  }
+}
+
+/**
+ * Remove all animations and transitions for people that prefer not to see them
+ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/*!
+ * Font Awesome Pro 5.11.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  display: inline-block;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-at:before {
+  content: '\f1fa';
+}
+
+.fa-file-pdf:before {
+  content: '\f1c1';
+}
+
+.fa-copyright:before {
+  content: '\f1f9';
+}
+
+.fa-linkedin:before {
+  content: '\f08c';
+}
+
+.fa-xing:before {
+  content: '\f168';
+}
+
+.fa-github:before {
+  content: '\f09b';
+}
+
+/*!
+ * Font Awesome Pro 5.11.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-display: auto;
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../webfonts/fa-brands-400.eot');
+  src: url('../webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/fa-brands-400.woff2') format('woff2'),
+    url('../webfonts/fa-brands-400.woff') format('woff'),
+    url('../webfonts/fa-brands-400.ttf') format('truetype'),
+    url('../webfonts/fa-brands-400.svg#fontawesome') format('svg');
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+/*!
+ * Font Awesome Pro 5.11.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-display: auto;
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/fa-regular-400.eot');
+  src: url('../webfonts/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/fa-regular-400.woff2') format('woff2'),
+    url('../webfonts/fa-regular-400.woff') format('woff'),
+    url('../webfonts/fa-regular-400.ttf') format('truetype'),
+    url('../webfonts/fa-regular-400.svg#fontawesome') format('svg');
+}
+
+.far {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
