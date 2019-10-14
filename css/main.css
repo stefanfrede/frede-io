@@ -1,6 +1,6 @@
 :root {
-  --primary: hsl(330, 79%, 56%);
-  --primary-bg: hsl(330, 79%, 56%);
+  --primary: hsl(328, 85%, 46%);
+  --primary-bg: hsl(328, 85%, 46%);
   --on-primary: hsl(216, 33%, 97%);
 
   --primary-dark: hsl(326, 90%, 39%);
@@ -16,7 +16,7 @@
   --surface: hsl(216, 33%, 97%);
   --on-surface: hsl(210, 24%, 16%);
   --on-surface-high: hsl(209, 20%, 25%);
-  --on-surface-medium: hsl(211, 10%, 53%);
+  --on-surface-medium: hsl(211, 12%, 43%);
 
   --background: hsl(216, 33%, 97%);
 
