@@ -25,6 +25,15 @@
   --github: hsl(0, 0%, 20%);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: hsl(210, 24%, 16%);
+    --on-surface-high: hsl(0, 0%, 88%);
+    --on-surface: hsl(0, 0%, 88%);
+    --background: hsl(210, 24%, 16%);
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -170,9 +179,7 @@ footer a:hover {
 }
 
 .h-card__photo {
-  border: 1px solid var(--surface);
   border-radius: 9999px;
-  margin-top: -1px;
 }
 
 .h-card__contact-data {
