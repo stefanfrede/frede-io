@@ -12,14 +12,16 @@ contact [at] frede [dot] io
 [XING](https://www.xing.com/profile/Stefan_Frede2) |
 [GitHub](https://github.com/stefanfrede)
 
-A front-end developer specializing in native javascript. Skills and experience
-include:
+A front-end developer with a focus on HTML, CSS, progressive enhancement and
+accessibility. Skills and experience include:
 
 + HTML and (S)CSS
-+ JavaScript
++ Responsive web design
++ Progressive enhancement and accessibility
++ Native JavaScript
 + Jest, Mocha, and Chai
 + Redux and Redux-Saga
-+ Webpack, Git, and GitLab CI
++ Webpack, Git, and Continuous Integration
 + Docker
 
 ## PROJECTS
@@ -91,57 +93,40 @@ I built the initial website as well as a lot of in-house tools.
 
 ## WORK EXPERIENCE
 
-Aboutbooks GmbH  
-Web Developer, 2019 – current
-
-ARIGO Software GmbH  
-Web Developer, 2017 – current
-
-50plus-Treff GmbH  
-Web Developer, 2010 – current
-
-tracdelight GmbH  
-Web Developer, 2016 – 2018
-
-Experteer GmbH  
-Web Developer, 2005 – 2017
-
-72sign  
-Web Developer, 2013 – 2015
-
-Wildsterne GmbH  
-Web Developer, 2011 – 2014
-
-Termine 24 GmbH  
-Web Developer, 2012 – 2012
-
-Studio M.U.C.  
-Web Developer, 2011 – 2011
-
-Voycer Ag  
-Web Developer, 2011 – 2011
-
-CertoClav Sterilizer GmbH  
-Web Developer, 2010 – 2011
-
-Kickz AG  
-Web Developer, 2004 – 2009
-
-TSG International AG  
-Web Developer, 2006 – 2009
-
-spielraum GmbH  
-Web Developer, 2004 – 2008
-
-Dirty Jerz GmbH  
-Web Developer, 2006 – 2007
-
-Brodel Automation  
-Web Developer, 2004 – 2005
-
-esolut GmbH  
-Web Developer, 2003 – 2004
-
++ Aboutbooks GmbH  
+  Web Developer, 2019 – current
++ ARIGO Software GmbH  
+  Web Developer, 2017 – current
++ 50plus-Treff GmbH  
+  Web Developer, 2010 – current
++ tracdelight GmbH  
+  Web Developer, 2016 – 2018
++ Experteer GmbH  
+  Web Developer, 2005 – 2017
++ 72sign  
+  Web Developer, 2013 – 2015
++ Wildsterne GmbH  
+  Web Developer, 2011 – 2014
++ Termine 24 GmbH  
+  Web Developer, 2012 – 2012
++ Studio M.U.C.  
+  Web Developer, 2011 – 2011
++ Voycer Ag  
+  Web Developer, 2011 – 2011
++ CertoClav Sterilizer GmbH  
+  Web Developer, 2010 – 2011
++ Kickz AG  
+  Web Developer, 2004 – 2009
++ TSG International AG  
+  Web Developer, 2006 – 2009
++ spielraum GmbH  
+  Web Developer, 2004 – 2008
++ Dirty Jerz GmbH  
+  Web Developer, 2006 – 2007
++ Brodel Automation  
+  Web Developer, 2004 – 2005
++ esolut GmbH  
+  Web Developer, 2003 – 2004
 
 ## EDUCATION
 
