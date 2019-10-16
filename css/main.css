@@ -354,15 +354,17 @@ footer a:hover {
       display: grid;
       grid-column-gap: 1.7777rem;
       -ms-grid-columns: 20rem 1.7777rem 1fr;
-      grid-template-columns: 20rem 1fr;
+      grid-template-columns: 21rem 1fr;
+      padding-left: 1.7777rem;
+      padding-right: 1.7777rem;
     }
 
     footer {
-      padding: 1.7777rem 0;
+      padding: 1.7777rem;
     }
 
     .footer__inner {
-      margin: 0 0 0 21.7777rem;
+      margin: 0 0 0 22.7777rem;
     }
 
     section + section {

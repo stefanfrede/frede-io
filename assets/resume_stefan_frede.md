@@ -1,12 +1,12 @@
 # Stefan Frede
 
-Zeißstr. 65  
-22765 Hamburg  
+Langenberger Str. 239  
+42551 Velbert  
 Germany
 
-+49 170 5434476  
++49-170-5434476  
 contact [at] frede [dot] io  
-[www.frede.io](https://www.frede.io/)
+www.frede.io
 
 [LinkedIn](https://www.linkedin.com/in/stefanfrede/) |
 [XING](https://www.xing.com/profile/Stefan_Frede2) |
