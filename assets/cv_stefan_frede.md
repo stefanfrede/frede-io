@@ -19,6 +19,7 @@ accessibility. Skills and experience include:
 + Responsive web design
 + Progressive enhancement and accessibility
 + Native JavaScript
++ Web Components
 + Jest, Mocha, and Chai
 + Redux and Redux-Saga
 + Webpack, Git, and Continuous Integration
