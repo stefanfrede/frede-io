@@ -23,6 +23,7 @@
   --linkedin: hsl(201, 100%, 35%);
   --xing: hsl(181, 96%, 20%);
   --github: hsl(0, 0%, 20%);
+  --gitlab: hsl(20, 97%, 57%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -266,6 +267,12 @@ footer a:hover {
 .social-bar__item--github > a:active,
 .social-bar__item--github > a:hover {
   color: var(--github);
+}
+
+.social-bar__item--gitlab > a:focus,
+.social-bar__item--gitlab > a:active,
+.social-bar__item--gitlab > a:hover {
+  color: var(--gitlab);
 }
 
 @media (min-width: 480px) {
