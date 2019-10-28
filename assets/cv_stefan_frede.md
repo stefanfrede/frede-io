@@ -96,10 +96,10 @@ I built the initial website as well as a lot of in-house tools.
 
 + Aboutbooks GmbH  
   Web Developer, 2019 – current
-+ ARIGO Software GmbH  
-  Web Developer, 2017 – current
 + 50plus-Treff GmbH  
   Web Developer, 2010 – current
++ ARIGO Software GmbH  
+  Web Developer, 2017 – 2019
 + tracdelight GmbH  
   Web Developer, 2016 – 2018
 + Experteer GmbH  
