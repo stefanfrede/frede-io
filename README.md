@@ -12,7 +12,7 @@ www.frede.io
 [XING](https://www.xing.com/profile/Stefan_Frede2) |
 [GitHub](https://github.com/stefanfrede)
 
-Hello, I'm Stefan. I'm a freelance front-end developer from Germany based in
+Hello, I'm Stefan. I'm a freelance frontend developer from Germany based in
 Hamburg.
 
 As an advocate for a free internet which everyone should be able to use

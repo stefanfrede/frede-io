@@ -12,7 +12,7 @@ www.frede.io
 [XING](https://www.xing.com/profile/Stefan_Frede2) |
 [GitHub](https://github.com/stefanfrede)
 
-A front-end developer with a focus on HTML, CSS, progressive enhancement and
+A frontend developer with a focus on HTML, CSS, progressive enhancement and
 accessibility. Skills and experience include:
 
 + HTML and (S)CSS
@@ -88,8 +88,8 @@ I built the initial website as well as a lot of in-house tools.
 
 + Worked with a large team of software engineers in a Ruby on Rails stack
   website.
-+ Implemented code standards to enable the team to construct front-ends.
-+ Focused on front-end performance, scalability, and maintainability.
++ Implemented code standards to enable the team to construct frontends.
++ Focused on frontend performance, scalability, and maintainability.
 
 
 ## WORK EXPERIENCE
