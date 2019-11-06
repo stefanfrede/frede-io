@@ -33,6 +33,14 @@
     --on-surface: hsl(0, 0%, 88%);
     --background: hsl(210, 24%, 16%);
   }
+
+  body {
+    background-image: linear-gradient(
+      to top,
+      var(--surface) 75%,
+      var(--primary-dark) 100%
+    );
+  }
 }
 
 *,
@@ -55,9 +63,10 @@ body {
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -ms-grid-rows: 1fr 5.5rem;
   grid-template-rows: 1fr 5.5rem;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0;
   min-height: 100vh;
+  padding: 2rem 0.5rem 0;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
@@ -72,13 +81,19 @@ h1 {
   margin: 0;
 }
 
-h2 {
+h1 + p {
   color: var(--primary-dark);
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
+  font-style: normal;
   font-weight: 400;
   letter-spacing: 0.05rem;
   line-height: 1.5rem;
-  margin: 0;
+  margin: 0 0 1rem;
+  text-align: center;
 }
 
 small {
@@ -108,6 +123,7 @@ a:visited {
   color: var(--on-surface-high);
   -webkit-text-decoration-color: var(--on-surface);
   text-decoration-color: var(--on-surface);
+  text-underline-offset: 0.25rem;
   transition-duration: 0.25s;
   transition-property: color;
   transition-timing-function: ease-in-out;
@@ -121,23 +137,9 @@ a:hover {
   text-decoration-color: var(--on-surface);
 }
 
-main {
-  background-color: var(--surface);
-  padding: 2rem 1rem;
-}
-
-section + section {
-  margin-top: 2rem;
-}
-
-header {
-  margin: 1rem 0;
-}
-
 footer {
-  background: var(--surface);
   color: var(--on-surface-medium);
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 }
 
 footer a:link,
@@ -176,11 +178,12 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   font-style: normal;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .h-card__photo {
   border-radius: 9999px;
+  margin-bottom: 1rem;
 }
 
 .h-card__contact-data {
@@ -189,6 +192,7 @@ footer a:hover {
 
 .h-card__contact-data > p {
   flex: 1 0 auto;
+  margin-bottom: 1.5rem;
 }
 
 .h-card__contact-data > p:first-child {
@@ -200,10 +204,23 @@ footer a:hover {
   flex-direction: column;
 }
 
+.h-card__contact-data > p > a,
+.h-card__contact-data > p > span {
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.h-card__contact-data > p > span:first-child,
+.h-card__contact-data > p > span:last-child {
+  display: block;
+}
+
 .download {
   align-items: center;
   display: flex;
   flex-direction: column;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .download__btn:link,
@@ -275,7 +292,7 @@ footer a:hover {
   color: var(--gitlab);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 30em) {
   .introduction,
   .footer__inner {
     margin: 0 auto;
@@ -283,7 +300,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   html {
     font-size: 112.5%;
   }
@@ -292,6 +309,7 @@ footer a:hover {
     -ms-grid-rows: 1fr 4.8888rem;
     grid-template-rows: 1fr 4.8888rem;
     line-height: 1.3333;
+    padding: 1.7777rem 0.8888rem 0;
   }
 
   h1 {
@@ -299,41 +317,39 @@ footer a:hover {
     line-height: 2.6666rem;
   }
 
-  h2 {
+  h1 + p {
     letter-spacing: 0.04rem;
-    line-height: 1.7777rem;
+    line-height: 1.3333rem;
   }
 
   small {
     line-height: 0.8888rem;
   }
 
-  main {
+  footer {
     padding: 1.7777rem 0;
   }
 
-  section + section {
-    margin-top: 1.7777rem;
+  .h-card__photo {
+    margin-bottom: 1.3333rem;
   }
 
-  header {
-    margin: 0.8888rem 0;
-  }
-
-  footer {
-    padding: 1.7777rem 0.8888rem;
-  }
-
-  .footer__inner {
-    max-width: 30rem;
-  }
-
-  .h-card {
-    margin-bottom: 1.7777rem;
+  .h-card__contact-data > p {
+    margin-bottom: 1.3333rem;
   }
 
   .h-card__contact-data > p:first-child {
     margin-right: 1.3333rem;
+  }
+
+  .h-card__contact-data > p > a,
+  .h-card__contact-data > p > span {
+    line-height: 1.3333;
+  }
+
+  .download {
+    line-height: 1.3333;
+    margin-bottom: 0.8888rem;
   }
 
   .download__btn:link,
@@ -345,41 +361,124 @@ footer a:hover {
     margin-right: 0.4444rem;
   }
 
-  .introduction {
-    max-width: 30rem;
-  }
-
   .introduction > p + p {
     margin-top: 0.8888rem;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62em) {
+  html {
+    font-size: 137.5%;
+  }
+
+  body {
+    line-height: 1.4545;
+    padding: 1.4545rem 0.7272rem 0;
+  }
+
+  h1 {
+    letter-spacing: -0.03rem;
+    line-height: 2.5454rem;
+  }
+
+  h1 + p {
+    letter-spacing: 0.03rem;
+    line-height: 1.8181rem;
+    margin-bottom: 0.7272rem;
+  }
+
+  picture {
+    align-self: center;
+  }
+
+  small {
+    line-height: 0.7272rem;
+  }
+
+  footer {
+    padding: 1.4545rem 0;
+  }
+
+  .h-card {
+    align-items: flex-start;
+  }
+
+  .h-card__photo {
+    margin-bottom: 1.0909rem;
+  }
+
+  .h-card__contact-data {
+    flex-direction: column;
+  }
+
+  .h-card__contact-data > p {
+    margin-bottom: 1.4545rem;
+  }
+
+  .h-card__contact-data > p:first-child {
+    margin-bottom: 1.0909rem;
+    margin-right: 0;
+  }
+
+  .h-card__contact-data > p:last-child {
+    margin-bottom: 1.8181rem;
+  }
+
+  .h-card__contact-data > p > a,
+  .h-card__contact-data > p > span {
+    line-height: 1.4545;
+  }
+
+  .download {
+    line-height: 1.4545;
+    margin-bottom: 0;
+  }
+
+  .download__btn:link,
+  .download__btn:visited {
+    font-size: 1rem;
+    padding: 0.3636rem 0.7272rem;
+  }
+
+  .introduction,
+  .footer__inner {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .introduction {
+    margin-top: 9.4545rem;
+  }
+
+  .introduction > p + p {
+    margin-top: 1.0909rem;
+  }
+
   @supports (display: grid) {
+    body {
+      grid-template-rows: 1fr 4.3636rem;
+    }
+
     main {
-      display: -ms-grid;
       display: grid;
-      grid-column-gap: 1.7777rem;
-      -ms-grid-columns: 20rem 1.7777rem 1fr;
-      grid-template-columns: 21rem 1fr;
-      padding-left: 1.7777rem;
-      padding-right: 1.7777rem;
+      grid-column-gap: 1.0909rem;
+      grid-template-columns: 1fr repeat(3, 4.4545rem) repeat(8, 1fr);
+      max-width: 66rem;
     }
 
     footer {
-      padding: 1.7777rem;
+      display: grid;
+      grid-column-gap: 1.0909rem;
+      grid-template-columns: 1fr repeat(3, 4.4545rem) repeat(8, 1fr);
     }
 
+    aside {
+      grid-column: 2 / 5;
+    }
+
+    .introduction,
     .footer__inner {
-      margin: 0 0 0 22.7777rem;
-    }
-
-    section + section {
-      margin-top: 0;
-    }
-
-    .introduction {
-      margin: 15.1111rem 0 0;
+      grid-column: 5 / 11;
     }
   }
 }
