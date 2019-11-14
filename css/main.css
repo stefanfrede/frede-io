@@ -121,11 +121,11 @@ img {
 a:link,
 a:visited {
   color: var(--on-surface-high);
-  -webkit-text-decoration-color: var(--on-surface);
-  text-decoration-color: var(--on-surface);
+  -webkit-text-decoration-color: var(--on-surface-medium);
+  text-decoration-color: var(--on-surface-medium);
   text-underline-offset: 0.25rem;
   transition-duration: 0.25s;
-  transition-property: color;
+  transition-property: color, text-decoration-color;
   transition-timing-function: ease-in-out;
 }
 
@@ -377,13 +377,16 @@ footer a:hover {
   }
 
   h1 {
-    letter-spacing: -0.03rem;
-    line-height: 2.5454rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.8181rem;
   }
 
   h1 + p {
-    letter-spacing: 0.03rem;
-    line-height: 1.8181rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    line-height: 1.4545;
     margin-bottom: 0.7272rem;
   }
 
@@ -421,6 +424,7 @@ footer a:hover {
   }
 
   .h-card__contact-data > p:last-child {
+    display: block;
     margin-bottom: 1.8181rem;
   }
 
@@ -430,6 +434,7 @@ footer a:hover {
   }
 
   .download {
+    display: inline-flex;
     line-height: 1.4545;
     margin-bottom: 0;
   }
@@ -447,7 +452,7 @@ footer a:hover {
   }
 
   .introduction {
-    margin-top: 9.4545rem;
+    margin-top: 8.7272rem;
   }
 
   .introduction > p + p {
@@ -462,14 +467,14 @@ footer a:hover {
     main {
       display: grid;
       grid-column-gap: 1.0909rem;
-      grid-template-columns: 1fr repeat(3, 4.4545rem) repeat(8, 1fr);
+      grid-template-columns: 1fr repeat(3, 3rem) repeat(12, 1fr);
       max-width: 66rem;
     }
 
     footer {
       display: grid;
       grid-column-gap: 1.0909rem;
-      grid-template-columns: 1fr repeat(3, 4.4545rem) repeat(8, 1fr);
+      grid-template-columns: 1fr repeat(3, 3rem) repeat(12, 1fr);
     }
 
     aside {
@@ -478,7 +483,7 @@ footer a:hover {
 
     .introduction,
     .footer__inner {
-      grid-column: 5 / 11;
+      grid-column: 6 / 14;
     }
   }
 }
