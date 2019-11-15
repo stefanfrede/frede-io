@@ -132,28 +132,30 @@ a:visited {
 a:focus,
 a:active,
 a:hover {
-  color: var(--primary);
-  -webkit-text-decoration-color: var(--on-surface);
-  text-decoration-color: var(--on-surface);
+  color: var(--primary-dark);
+  -webkit-text-decoration-color: var(--on-surface-medium);
+  text-decoration-color: var(--on-surface-medium);
 }
 
 footer {
   color: var(--on-surface-medium);
   padding: 2rem 0;
+  transition-property: text-decoration-color;
+  transition-timing-function: ease-in-out;
 }
 
 footer a:link,
 footer a:visited {
   color: var(--on-surface-medium);
-  text-decoration: none;
-  -webkit-text-decoration-color: var(--on-surface-medium);
-  text-decoration-color: var(--on-surface-medium);
+  -webkit-text-decoration-color: var(--surface);
+  text-decoration-color: var(--surface);
 }
 
 footer a:focus,
 footer a:active,
 footer a:hover {
-  text-decoration: underline;
+  -webkit-text-decoration-color: var(--on-surface-medium);
+  text-decoration-color: var(--on-surface-medium);
 }
 
 .footer__inner {
