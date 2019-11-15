@@ -29,8 +29,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --surface: hsl(210, 24%, 16%);
-    --on-surface-high: hsl(0, 0%, 88%);
-    --on-surface: hsl(0, 0%, 88%);
+    --on-surface: hsl(214, 15%, 91%);
+    --on-surface-high: hsl(210, 16%, 82%);
+    --on-surface-medium: hsl(211, 10%, 53%);
+
     --background: hsl(210, 24%, 16%);
   }
 
@@ -134,8 +136,8 @@ a:focus,
 a:active,
 a:hover {
   color: var(--primary-dark);
-  -webkit-text-decoration-color: var(--on-surface-medium);
-  text-decoration-color: var(--on-surface-medium);
+  -webkit-text-decoration-color: var(--on-surface);
+  text-decoration-color: var(--on-surface);
 }
 
 footer {
