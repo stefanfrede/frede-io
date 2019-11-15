@@ -403,6 +403,17 @@ footer a:hover {
     line-height: 0.7272rem;
   }
 
+  a:link,
+  a:visited {
+    color: var(--on-surface);
+  }
+
+  a:focus,
+  a:active,
+  a:hover {
+    color: var(--primary-dark);
+  }
+
   footer {
     padding: 1.4545rem 0;
   }
