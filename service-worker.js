@@ -1,7 +1,5 @@
-const cacheName = 'static-cache';
-
 const staticAssets = [
-  '/index.html',
+  '/',
   '/assets/css/index.css',
   '/assets/img/photo-160w.jpg',
   '/assets/img/photo-160w.webp',
@@ -13,16 +11,35 @@ const staticAssets = [
   '/assets/pdf/cv_stefan_frede.pdf',
 ];
 
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(cacheName).then(cache => cache.addAll(staticAssets)),
-  );
+self.addEventListener('install', async () => {
+  const cache = await caches.open('static-cache');
+  cache.addAll(staticAssets);
 });
 
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches
-      .match(event.request)
-      .then(response => (response ? response : fetch(event.request))),
-  );
+  const req = event.request;
+  const url = new URL(req.url);
+
+  if (url.origin === location.url) {
+    event.respondWith(cacheFirst(req));
+  } else {
+    event.respondWith(networkFirst(req));
+  }
 });
+
+async function cacheFirst(req) {
+  const cachedResponse = caches.match(req);
+  return cachedResponse || fetch(req);
+}
+
+async function networkFirst(req) {
+  const cache = await caches.open('dynamic-cache');
+
+  try {
+    const res = await fetch(req);
+    cache.put(req, res.clone());
+    return res;
+  } catch (error) {
+    return await cache.match(req);
+  }
+}
