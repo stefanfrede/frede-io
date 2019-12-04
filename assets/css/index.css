@@ -216,7 +216,7 @@ footer a:hover {
   line-height: 1.5;
 }
 
-.h-card__contact-data > p > span:first-child,
+.h-card__contact-data > p > span:nth-child(-n + 2),
 .h-card__contact-data > p > span:last-child {
   display: block;
 }

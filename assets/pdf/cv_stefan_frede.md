@@ -1,7 +1,8 @@
 # Stefan Frede
 
-Langenberger Str. 239  
-42551 Velbert  
+Ehrenbergstraße 16a  
+Scanbox #03611  
+10245 Berlin  
 Germany
 
 +49-170-5434476  
