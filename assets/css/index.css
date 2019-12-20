@@ -20,6 +20,8 @@
 
   --background: hsl(216, 33%, 97%);
 
+  --gradient-left: hsl(214, 15%, 91%);
+
   --linkedin: hsl(201, 100%, 35%);
   --xing: hsl(181, 96%, 20%);
   --github: hsl(0, 0%, 20%);
@@ -34,14 +36,8 @@
     --on-surface-medium: hsl(211, 10%, 53%);
 
     --background: hsl(210, 24%, 16%);
-  }
 
-  body {
-    background-image: linear-gradient(
-      to top,
-      var(--surface) 75%,
-      var(--primary-dark) 100%
-    );
+    --gradient-left: hsl(209, 20%, 25%);
   }
 }
 
@@ -57,6 +53,11 @@ html {
 
 body {
   background-color: var(--background);
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-left) 0%,
+    var(--background) 100%
+  );
   color: var(--on-surface);
   display: -ms-grid;
   display: grid;
