@@ -20,13 +20,23 @@ accessibility. Skills and experience include:
 + Responsive web design
 + Progressive enhancement and accessibility
 + Native JavaScript
-+ Web Components
++ Web Components, LitElement, lit-html
 + Jest, Mocha, and Chai
 + Redux and Redux-Saga
 + Webpack, Git, and Continuous Integration
 + Docker
 
 ## PROJECTS
+
+**Schweisthal Beschlag- und Schließtechnik GmbH** (https://www.schweisthal.de)  
+*Schweisthal is a sales representative for locks, fittings, and security
+systems.*
+
+I realized a web app to configure a locking system.
+
++ Built with LitElement and Redux.
++ Used the GitLab CI to make sure that the code was linted before getting merged
+  into the master.
 
 **Aboutbooks GmbH** (https://www.lovelybooks.de/)  
 *LovelyBooks is a meeting point for readers, authors, and publishers.*
@@ -38,8 +48,7 @@ I realized promotions from publishers on the platform for new books.
 + Improved the responsiveness to make the pages scale from small to big screens
   according to the design specifications.
 + Calculated a vertical rhythm based on the designs to enhance readability.
-+ Removed unnecessary and updated the remaining JavaScript to reduce the size
-  and increase the page load time.
++ Cleaned up the JavaScript to reduce the size and decrease the page load time.
 
 **ARIGO Software GmbH** (https://www.arigo-software.de/)  
 *Arigo is a specialist in building automation and tracking solutions.*
@@ -99,6 +108,8 @@ I built the initial website as well as a lot of in-house tools.
   Web Developer, 2019 – current
 + 50plus-Treff GmbH  
   Web Developer, 2010 – current
++ Schweisthal Beschlag- und Schließtechnik GmbH  
+  Web Developer, 2019 – 2020
 + ARIGO Software GmbH  
   Web Developer, 2017 – 2019
 + tracdelight GmbH  
