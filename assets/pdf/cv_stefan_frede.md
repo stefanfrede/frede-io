@@ -18,9 +18,9 @@ accessibility. Skills and experience include:
 
 + HTML and (S)CSS
 + Responsive web design
-+ Progressive enhancement and accessibility
++ Accessibility and progressive enhancement
 + Native JavaScript
-+ Web Components, LitElement, lit-html
++ Web Components, LitElement, and lit-html
 + Jest, Mocha, and Chai
 + Redux and Redux-Saga
 + Webpack, Git, and Continuous Integration
@@ -34,8 +34,12 @@ systems.*
 
 I realized a web app to configure a locking system.
 
-+ Built with LitElement and Redux.
-+ Used the GitLab CI to make sure that the code was linted before getting merged
++ Set-up the development environment with Webpack and Babel to use modern
+  JavaScript and ensure it will work on older browsers.
++ Used LitElement to create the Web Components.
++ Handled state with Redux.
++ Cached requests to the REST API with Redux to increase performance.
++ Used the GitLab CI to make sure that the code was linted before merged
   into the master.
 
 **Aboutbooks GmbH** (https://www.lovelybooks.de/)  
@@ -65,7 +69,7 @@ I developed an interface to interact via a WebSocket connection with the
 back-end over a REST API.
 
 + Set-up the development environment with Webpack and Babel to use modern
-  JavaScript, ensuring usability for older browsers and Docker to run requests
+  JavaScript, ensuring it works on older browsers and Docker to run requests
   against the REST API.
 + Cached requests with Redux to increase the performance.
 + Handled requests with Redux-Saga asynchronously ensuring consistency.
