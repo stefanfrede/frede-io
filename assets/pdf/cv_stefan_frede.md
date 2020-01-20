@@ -11,15 +11,16 @@ www.frede.io
 
 [LinkedIn](https://www.linkedin.com/in/stefanfrede/) |
 [XING](https://www.xing.com/profile/Stefan_Frede2) |
-[GitHub](https://github.com/stefanfrede)
+[GitHub](https://github.com/stefanfrede) |
+[GitLab](https://gitlab.com/stefanfrede)
 
-A front-end developer with a focus on HTML, CSS, progressive enhancement and
-accessibility. Skills and experience include:
+A front-end developer with a focus on HTML, CSS, Accessibility and Progressive
+Enhancement. Skills and experience include:
 
 + HTML and (S)CSS
-+ Responsive web design
-+ Accessibility and progressive enhancement
-+ Native JavaScript
++ Responsive Web Design
++ Accessibility and Progressive Enhancement
++ Vanilla JavaScript
 + Web Components, LitElement, and lit-html
 + Jest, Mocha, and Chai
 + Redux and Redux-Saga
@@ -32,7 +33,7 @@ accessibility. Skills and experience include:
 *Schweisthal is a sales representative for locks, fittings, and security
 systems.*
 
-I realized a web app to configure a locking system.
+I built a web app to configure a locking system.
 
 + Set-up the development environment with Webpack and Babel to use modern
   JavaScript and ensure it will work on older browsers.
@@ -45,7 +46,7 @@ I realized a web app to configure a locking system.
 **Aboutbooks GmbH** (https://www.lovelybooks.de/)  
 *LovelyBooks is a meeting point for readers, authors, and publishers.*
 
-I realized promotions from publishers on the platform for new books.
+I built promotions from publishers on the platform for new books.
 
 + Refactored the CSS to reduce the size and introduced the BEM notation to
   increase the reusability.
@@ -57,7 +58,7 @@ I realized promotions from publishers on the platform for new books.
 **ARIGO Software GmbH** (https://www.arigo-software.de/)  
 *Arigo is a specialist in building automation and tracking solutions.*
 
-I developed a replacement for the jQuery-based tree component.
+I built a replacement for the jQuery-based tree component.
 
 + Built with Polymer 2 to fit into the rest of Arigos system.
 + Wrote unit tests with Mocha and Chai to improve the code quality.
@@ -65,7 +66,7 @@ I developed a replacement for the jQuery-based tree component.
   unit tests before merged into master.
 + Wrote documentation to enhance usability.
 
-I developed an interface to interact via a WebSocket connection with the
+I built an interface to interact via a WebSocket connection with the
 back-end over a REST API.
 
 + Set-up the development environment with Webpack and Babel to use modern
