@@ -149,17 +149,12 @@ footer {
 }
 
 footer a:link,
-footer a:visited {
-  color: var(--on-surface-medium);
-  -webkit-text-decoration-color: var(--surface);
-  text-decoration-color: var(--surface);
-}
-
+footer a:visited,
 footer a:focus,
 footer a:active,
 footer a:hover {
-  -webkit-text-decoration-color: var(--on-surface-medium);
-  text-decoration-color: var(--on-surface-medium);
+  color: var(--on-surface-medium);
+  text-decoration: none;
 }
 
 .footer__inner {
