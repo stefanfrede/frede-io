@@ -36,24 +36,13 @@
   <main role="main">
     <aside>
       <address class="h-card">
-        <picture>
-          <source
-            srcset="/assets/img/photo-640w.webp 640w,
-                    /assets/img/photo-320w.webp 320w,
-                    /assets/img/photo-160w.webp 160w"
-            sizes="160px"
-            type="image/webp">
-          <source
-            srcset="/assets/img/photo-640w.jpg 640w,
-                    /assets/img/photo-320w.jpg 320w,
-                    /assets/img/photo-160w.jpg 160w"
-            sizes="160px"
-            type="image/jpeg">
-          <img
-            class="h-card__photo u-photo"
-            src="/assets/img/photo-160w.jpg"
-            alt="Stefan Frede">
-        </picture>
+        <img
+          class="h-card__photo u-photo"
+          height="160"
+          src="/assets/img/photo-160w.jpg"
+          srcset="/assets/img/photo-160w.jpg 1x, /assets/img/photo-320w.jpg 2x,
+             /assets/img/photo-640w.jpg 3x"
+          width="160" />
         <h1 class="p-name">
           Stefan Frede
         </h1>
