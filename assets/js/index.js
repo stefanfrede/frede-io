@@ -26,12 +26,21 @@ function obfuscateEmail() {
   emails.forEach(email => email.setAttribute('href', `mailto:${link}`));
 }
 
+function showTestimonial() {
+  const testimonials = document.querySelectorAll('.js-reviews > .h-review');
+  const testimonial =
+    testimonials[Math.floor(Math.random() * testimonials.length)];
+
+  testimonial.style.display = 'block';
+}
+
 function updateCopyright() {
   document.querySelector('.js-year').textContent = new Date().getFullYear();
 }
 
 function run() {
   obfuscateEmail();
+  showTestimonial();
   updateCopyright();
 }
 
