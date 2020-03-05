@@ -270,17 +270,26 @@ footer a:hover {
 .h-card__contact-data > p:last-child {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .h-card__contact-data > p > a,
 .h-card__contact-data > p > span {
-  display: inline-block;
+  display: inline-flex;
   line-height: 1.5;
 }
 
 .h-card__contact-data > p > span:nth-child(-n + 2),
 .h-card__contact-data > p > span:last-child {
   display: block;
+}
+
+.h-card__contact-data > p:last-child > a.u-email {
+  align-items: flex-end;
+}
+
+.h-card__contact-data > p:last-child > a.u-email > svg {
+  margin-bottom: 0.2em;
 }
 
 .h-review + .h-review {
@@ -576,6 +585,14 @@ footer a:hover {
 
   .h-card__contact-data > p + p {
     margin-top: 1.3333rem;
+  }
+
+  .h-card__contact-data > p:last-child {
+    justify-content: flex-start;
+  }
+
+  .h-card__contact-data > p:last-child > a {
+    padding: 0.2222rem 0;
   }
 
   .h-review {
