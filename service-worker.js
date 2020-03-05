@@ -1,18 +1,6 @@
 const staticAssets = [
   '/',
   '/assets/css/index.css',
-  '/assets/img/nina-zimmermann-1x.jpg',
-  '/assets/img/nina-zimmermann-2x.jpg',
-  '/assets/img/nina-zimmermann-3x.jpg',
-  '/assets/img/stefan-frede-1x.jpg',
-  '/assets/img/stefan-frede-2x.jpg',
-  '/assets/img/stefan-frede-3x.jpg',
-  '/assets/img/thomas-nitsche-1x.jpg',
-  '/assets/img/thomas-nitsche-2x.jpg',
-  '/assets/img/thomas-nitsche-3x.jpg',
-  '/assets/img/ulrich-nitsche-1x.jpg',
-  '/assets/img/ulrich-nitsche-2x.jpg',
-  '/assets/img/ulrich-nitsche-3x.jpg',
   '/assets/pdf/cv_stefan_frede.pdf',
 ];
 
