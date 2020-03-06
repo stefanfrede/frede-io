@@ -328,12 +328,13 @@ footer a:hover {
   padding: 0 0 0 2rem;
 }
 
-.p-author > img {
+.p-author > picture {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
-  height: 5.063rem;
+  flex: 0 0 3.8125rem;
+  height: 3.8125rem;
   margin: 0 1rem 0 0;
-  width: 5.063rem;
+  width: 3.8125rem;
 }
 
 .p-author > span {
@@ -518,6 +519,13 @@ footer a:hover {
     padding: 0;
   }
 
+  .p-author > picture {
+    flex: 0 0 3.3888rem;
+    height: 3.3888rem;
+    margin-right: 0.8888rem;
+    width: 3.3888rem;
+  }
+
   .download {
     line-height: 1.3333;
   }
@@ -607,12 +615,6 @@ footer a:hover {
     align-items: center;
     font-size: 0.667rem;
     line-height: 0.8888rem;
-  }
-
-  .p-author > img {
-    height: 3.375rem;
-    margin-right: 0.8888rem;
-    width: 3.375rem;
   }
 
   .download {
