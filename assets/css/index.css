@@ -175,7 +175,11 @@ footer a:hover {
   text-shadow: none;
 }
 
-.fa-at {
+.fa-at,
+.fa-fax,
+.fa-paper-plane,
+.fa-phone,
+.fa-window {
   display: inline-block;
   font-size: 0.875em;
   height: 1em;
@@ -183,6 +187,17 @@ footer a:hover {
   text-align: center;
   vertical-align: -0.125em;
   width: 1.25em;
+}
+
+.fa-window {
+  align-self: center;
+}
+
+.fa-fax,
+.fa-paper-plane,
+.fa-phone,
+.fa-window {
+  margin-right: 0.25rem;
 }
 
 .fa-file-pdf {
@@ -264,13 +279,13 @@ footer a:hover {
 }
 
 .h-card__contact-data > p:first-child {
-  margin-right: 1.5rem;
+  margin-right: 0.75rem;
 }
 
 .h-card__contact-data > p:last-child {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .h-card__contact-data > p > a,
@@ -284,10 +299,12 @@ footer a:hover {
   display: block;
 }
 
+.h-card__contact-data > p:last-child > a.p-tel,
 .h-card__contact-data > p:last-child > a.u-email {
   align-items: flex-end;
 }
 
+.h-card__contact-data > p:last-child > a.p-tel > svg,
 .h-card__contact-data > p:last-child > a.u-email > svg {
   margin-bottom: 0.2em;
 }
@@ -486,6 +503,13 @@ footer a:hover {
 
   .h-card__contact-data > p {
     margin-bottom: 1.3333rem;
+  }
+
+  .fa-fax,
+  .fa-paper-plane,
+  .fa-phone,
+  .fa-window {
+    margin-right: 0.5rem;
   }
 
   .h-card__contact-data > p:first-child {
