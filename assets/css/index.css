@@ -59,6 +59,7 @@ body {
     var(--gradient-left) 0%,
     var(--background) 100%
   );
+  border-top: 0.25rem solid var(--primary);
   color: var(--on-surface);
   display: -ms-grid;
   display: grid;
