@@ -73,6 +73,7 @@ body {
   max-width: 90rem;
   min-height: 100vh;
   padding: 2rem 1rem 0;
+  position: relative;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
@@ -242,6 +243,13 @@ footer a:hover {
   width: 0.875em;
 }
 
+.paint-drip {
+  fill: var(--primary);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .details,
 .about {
   border-bottom: 1px solid var(--on-surface-low);
@@ -286,7 +294,6 @@ footer a:hover {
 .h-card__contact-data > p:last-child {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .h-card__contact-data > p > a,
@@ -485,6 +492,10 @@ footer a:hover {
     padding: 2.6666rem 0 1.7777rem;
   }
 
+  .paint-drip {
+    right: 10%;
+  }
+
   .details,
   .about {
     margin-bottom: 1.7777rem;
@@ -570,6 +581,10 @@ footer a:hover {
 }
 
 @media (min-width: 62em) {
+  .paint-drip {
+    right: 15%;
+  }
+
   .details,
   .about,
   .reviews {
