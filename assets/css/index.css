@@ -300,6 +300,7 @@ footer a:hover {
 .h-card__contact-data > p > span {
   display: inline-flex;
   line-height: 1.5;
+  margin-top: 0.4444rem;
 }
 
 .h-card__contact-data > p > span:nth-child(-n + 2),
@@ -637,6 +638,10 @@ footer a:hover {
 
   .h-card__contact-data > p:last-child {
     justify-content: flex-start;
+  }
+
+  .h-card__contact-data > p > span {
+    margin-top: 0;
   }
 
   .h-card__contact-data > p:last-child > a + a {
