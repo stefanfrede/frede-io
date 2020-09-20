@@ -5,17 +5,17 @@ Scanbox #03611
 10245 Berlin  
 Germany
 
-+49-170-5434476  
-contact [at] frede [dot] io  
-www.frede.io
+Phone: +49-2051-4057910  
+Fax: +49-2051-3254994  
+Email: contact@frede.io  
+Web: www.frede.io
 
-[LinkedIn](https://www.linkedin.com/in/stefanfrede/) |
-[XING](https://www.xing.com/profile/Stefan_Frede2) |
-[GitHub](https://github.com/stefanfrede) |
-[GitLab](https://gitlab.com/stefanfrede)
+[LinkedIn](https://www.linkedin.com/in/stefanfrede/) | [XING](https://www.xing.com/profile/Stefan_Frede2) | [GitHub](https://github.com/stefanfrede) | [GitLab](https://gitlab.com/stefanfrede)
 
-A front-end developer with a focus on HTML, CSS, Accessibility and Progressive
-Enhancement. Skills and experience include:
+I'm a front-end developer with a focus on HTML, CSS, Accessibility and Progressive
+Enhancement. When I use JavaScript, I like to limit myself to browser APIs whenever possible.
+
+Skills and experience include:
 
 + HTML and (S)CSS
 + Responsive Web Design
@@ -29,27 +29,38 @@ Enhancement. Skills and experience include:
 
 ## PROJECTS
 
+**T-Systems Multimedia Solutions GmbH** (https://www.t-systems.com)  
+*T-Systems is a German global IT services and consulting company.*
+
+I built accessible components which got integrated in a Salesforce application.
+
++ Used HTML, CSS, and JavaScript to write accessible components.
++ Adjusted the Webpack configuration for a smoother development experience.
++ Tested my code with different browsers to assure working components inside the
+  provided browser matrix.
++ Tested my components with browser accessibility tools to assure that I fulfilled
+  the requirements.
+
 **Schweisthal Beschlag- und Schließtechnik GmbH** (https://www.schweisthal.de)  
 *Schweisthal is a sales representative for locks, fittings, and security
 systems.*
 
 I built a web app to configure a locking system.
 
-+ Set-up the development environment with Webpack and Babel to use modern
-  JavaScript and ensure it will work on older browsers.
++ Set-up the development environment with Webpack and Babel to use modern JavaScript
+  and ensure it will work on older browsers.
 + Used LitElement to create the Web Components.
 + Handled state with Redux.
 + Cached requests to the REST API with Redux to increase performance.
-+ Used the GitLab CI to make sure that the code was linted before merged
-  into the master.
++ Used the GitLab CI to make sure that the code was linted before merged into the master.
 
 **Aboutbooks GmbH** (https://www.lovelybooks.de/)  
 *LovelyBooks is a meeting point for readers, authors, and publishers.*
 
 I built promotions from publishers on the platform for new books.
 
-+ Refactored the CSS to reduce the size and introduced the BEM notation to
-  increase the reusability.
++ Refactored the CSS to reduce the size and introduced the BEM notation to increase
+  the re-usability.
 + Improved the responsiveness to make the pages scale from small to big screens
   according to the design specifications.
 + Calculated a vertical rhythm based on the designs to enhance readability.
@@ -74,7 +85,7 @@ back-end over a REST API.
   against the REST API.
 + Cached requests with Redux to increase the performance.
 + Handled requests with Redux-Saga asynchronously ensuring consistency.
-+ Applied functional programming principles to improve readability, reusability
++ Applied functional programming principles to improve readability, re-usability
   and reduce the chance for errors.
 + Wrote unit tests with Jest to improve the code quality.
 + Set-up GitLab CI to make sure that code ran against the unit tests before
@@ -88,7 +99,7 @@ I implemented the redesign to make the entire website mobile-friendly.
 
 + Built the site with Bootstrap 3 to speed up development time.
 + Used a responsive grid to scale from small to big screens.
-+ Worked with SCSS mixins and variables for code reusability.
++ Worked with SCSS mixins and variables for code re-usability.
 + Implemented a build process for JavaScript with Gulp to bundle and minify
   JavaScript libraries to decrease the page load time.
 + Transpiled code with Babel to use modern JavaScript, ensuring usability for
@@ -107,47 +118,81 @@ I built the initial website as well as a lot of in-house tools.
 + Focused on front-end performance, scalability, and maintainability.
 
 
+## TESTIMONIALS
+
+> Stefan has been supporting the company for years. He played a key role
+> in developing our front-end further and always  delivered on time
+> and with great additional ideas.
+>
+> I would definitely work with Stefan again and can highly recommend him.
+
+**Nina Zimmermann**  
+CEO at [tracdelight GmbH](https://www.tracdelight.io/)
+
+> I have worked with Stefan on front-end projects for over ten years.
+> His work was always done on time, on budget, and with a high degree
+> of professionalism.
+>
+> It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate
+> to recommend or work with him again.
+
+**Thomas Nitsche**  
+VP of Engineering at [Experteer GmbH](https://www.experteer.com/)
+
+> We've been working with Stefan for over 14 years. He has played a key-role
+> in developing our front end. His reliability, professional expertise and his
+> commitment have always convinced us. We particularly appreciate his innovative
+> ideas and engagement to the continuous development of our product.
+>
+> We'll definitely continue to work with Stefan in the future, and can highly recommend him.
+
+**Sven Exter**  
+CEO at [50plus-Treff GmbH ](https://www.50plus-treff.de/)
+
+
 ## WORK EXPERIENCE
 
-+ Aboutbooks GmbH  
-  Web Developer, 2019 – current
++ T-Systems Multimedia Solutions GmbH
+  Front-end Developer, 2020 – 2020
 + 50plus-Treff GmbH  
-  Web Developer, 2010 – current
+  Front-end Developer, 2010 – 2020
 + Schweisthal Beschlag- und Schließtechnik GmbH  
-  Web Developer, 2019 – 2020
+  Front-end Developer, 2019 – 2020
++ Aboutbooks GmbH  
+  Front-end Developer, 2019 – 2020
 + ARIGO Software GmbH  
-  Web Developer, 2017 – 2019
+  Front-end Developer, 2017 – 2019
 + tracdelight GmbH  
-  Web Developer, 2016 – 2018
+  Front-end Developer, 2016 – 2018
 + Experteer GmbH  
-  Web Developer, 2005 – 2017
+  Front-end Developer, 2005 – 2017
 + 72sign  
-  Web Developer, 2013 – 2015
+  Front-end Developer, 2013 – 2015
 + Wildsterne GmbH  
-  Web Developer, 2011 – 2014
+  Front-end Developer, 2011 – 2014
 + Termine 24 GmbH  
-  Web Developer, 2012 – 2012
+  Front-end Developer, 2012 – 2012
 + Studio M.U.C.  
-  Web Developer, 2011 – 2011
+  Front-end Developer, 2011 – 2011
 + Voycer Ag  
-  Web Developer, 2011 – 2011
+  Front-end Developer, 2011 – 2011
 + CertoClav Sterilizer GmbH  
-  Web Developer, 2010 – 2011
+  Front-end Developer, 2010 – 2011
 + Kickz AG  
-  Web Developer, 2004 – 2009
+  Front-end Developer, 2004 – 2009
 + TSG International AG  
-  Web Developer, 2006 – 2009
+  Front-end Developer, 2006 – 2009
 + spielraum GmbH  
-  Web Developer, 2004 – 2008
+  Front-end Developer, 2004 – 2008
 + Dirty Jerz GmbH  
-  Web Developer, 2006 – 2007
+  Front-end Developer, 2006 – 2007
 + Brodel Automation  
-  Web Developer, 2004 – 2005
+  Front-end Developer, 2004 – 2005
 + esolut GmbH  
-  Web Developer, 2003 – 2004
+  Front-end Developer, 2003 – 2004
+
 
 ## EDUCATION
 
 Macromedia - Akademie für neue Medien  
 Digital Media Designer, 2003
-
