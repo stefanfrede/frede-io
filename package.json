@@ -35,6 +35,7 @@
     ]
   },
   "scripts": {
+    "serve": "serve --no-clipboard --listen 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
@@ -50,6 +51,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
+    "serve": "^11.3.2",
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^3.0.0",
