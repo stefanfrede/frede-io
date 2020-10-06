@@ -13,10 +13,13 @@ Web: www.frede.io
 [LinkedIn](https://www.linkedin.com/in/stefanfrede/) | [XING](https://www.xing.com/profile/Stefan_Frede2) | [GitHub](https://github.com/stefanfrede) | [GitLab](https://gitlab.com/stefanfrede)
 
 I'm a front-end developer with a focus on HTML, CSS, Accessibility and
-Progressive Enhancement. When I use JavaScript, I like to limit myself to
-browser APIs whenever possible.
+Progressive Enhancement and I like to limit myself to browser APIs whenever
+possible.
 
-Skills and experience include:
+The web has come a long way. Features that used to require libraries or
+frameworks can now easily be implemented using vanilla JavaScript.
+
+### Skills and experience include:
 
 + HTML and (S)CSS
 + Responsive Web Design
@@ -197,4 +200,4 @@ CEO at [50plus-Treff GmbH ](https://www.50plus-treff.de/)
 ## EDUCATION
 
 Macromedia - Akademie für neue Medien  
-Digital Media Designer, 2003
+Digital Media Designer, 2003 
