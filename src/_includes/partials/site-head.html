@@ -51,12 +51,15 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
 <link rel="manifest" href="/manifest.json" />
 
-<link rel="stylesheet" href="/styles/index.css?{{ hash }}" />
-
 <link
-  rel="preload"
-  href="https://rsms.me/inter/inter.css"
+  rel="prefetch"
   as="style"
-  onload="this.onload=null;this.rel='stylesheet'"
+  onload="this.rel='stylesheet'"
+  href="https://rsms.me/inter/inter.css"
 />
-<noscript><link rel="stylesheet" href="https://rsms.me/inter/inter.css"></noscript>
+
+<noscript>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+</noscript>
+
+<link rel="stylesheet" href="/styles/index.css?{{ hash }}" />
