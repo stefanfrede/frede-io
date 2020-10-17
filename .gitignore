@@ -1,14 +1,24 @@
-.DS_Store
-*.sw[nop]
-.bundle
-.byebug_history
-.env
-db/*.sqlite3
-log/*.log
-rerun.txt
-tags
-!tags/
-tmp/**/*
-!tmp/cache/.keep
-*.pyc
+# dependecies installed by npm
 node_modules
+web_modules
+
+# build artefacts
+.build
+build
+dist
+
+# secrets
+.env
+
+# logs
+*.log
+report.html
+
+# macOS related files
+.DS_Store
+
+# version manager
+.tool-versions
+
+# Local Netlify folder
+.netlify

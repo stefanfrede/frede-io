@@ -1,0 +1,26 @@
+<header role="banner">
+  {% assign url = cloudinary.url | append: '/' | append: cloudinary.cloud_name %}
+  {% assign pid = cloudinary.public_id | append: '/' | append: hcard.photo %}
+  {% capture srcset %}
+    {% for i in (1..4) %}
+      {%- assign dpr = 'dpr_' | append: i | append: '.0' -%}
+      {%- assign res = i | append: 'x' -%}
+      {{ url }}/f_auto,{{ dpr }},w_160/{{ pid }} {{ res }},
+    {% endfor %}
+  {% endcapture %}
+  <h1>
+    <figure>
+      <img
+        srcset="{{ srcset }}"
+        src="{{ url }}/f_auto,dpr_1.0,w_160/{{ pid }}"
+        alt="Stefan Frede"
+        class="rounded-full mx-auto lg:mx-0"
+        height="160"
+        width="160"
+        />
+      <figcaption class="sr-only">
+        Stefan Frede
+      </figcaption>
+    </figure>
+  </h1>
+</header>
