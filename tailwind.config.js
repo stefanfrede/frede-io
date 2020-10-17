@@ -14,6 +14,9 @@ module.exports = {
       gridTemplateRows: {
         layout: 'auto 1fr auto',
       },
+      margin: {
+        '2px': '2px',
+      },
     },
     typography: {
       default: {
