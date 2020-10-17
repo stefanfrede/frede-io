@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="text-gray-900 antialiased leading-tight" lang="en">
+  <head>
+    {%- include "partials/site-head.html" -%}
+  </head>
+  <body
+    class="min-h-screen flex flex-col items-center justify-center
+    bg-gradient-to-tr from-white to-gray-100 border-t-4 border-pink-600"
+  >
+    {% include "partials/paint-drip.html" %}
+
+    <div
+      class="grid grid-rows-layout gap-8 max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8"
+    >
+      {% include "partials/site-header.html" %}
+
+      <main
+        id="main-content"
+        class="grid lg:grid-cols-layout gap-16"
+        tabindex="-1"
+      >
+        {% block content %}{% endblock %}
+      </main>
+
+      {% include "partials/site-footer.html" %}
+    </div>
+
+    <script type="module" src="/_dist_/index.js"></script>
+  </body>
+</html>

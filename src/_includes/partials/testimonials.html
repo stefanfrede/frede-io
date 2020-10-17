@@ -1,0 +1,75 @@
+<section class="max-w-lg mx-auto lg:max-w-none lg:mx-0 js-reviews">
+  {% for t in testimonials %}
+    <div class="h-review relative hidden">
+      <svg
+        class="absolute top-0 left-0 transform -translate-x-8 -translate-y-10
+        h-36 w-36 text-pink-200 opacity-50 lg:-translate-x-7 lg:translate-y-0 lg:h-5 lg:w-5 lg:text-gray-700"
+        aria-hidden="true"
+        focusable="false"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 576 512"
+      >
+        <path
+          id="fa-quote-left"
+          fill="currentColor"
+          d="M504 224h-56v-8c0-22.1 17.9-40 40-40h8c26.5 0 48-21.5
+          48-48V80c0-26.5-21.5-48-48-48h-8c-101.5 0-184 82.5-184 184v192c0
+          39.7 32.3 72 72 72h128c39.7 0 72-32.3
+          72-72V296c0-39.7-32.3-72-72-72zm24 184c0 13.2-10.8 24-24
+          24H376c-13.2 0-24-10.8-24-24V216c0-75 61-136 136-136h8v48h-8c-48.5
+          0-88 39.5-88 88v56h104c13.2 0 24 10.8 24 24v112zM200
+          224h-56v-8c0-22.1 17.9-40 40-40h8c26.5 0 48-21.5
+          48-48V80c0-26.5-21.5-48-48-48h-8C82.5 32 0 114.5 0 216v192c0 39.7
+          32.3 72 72 72h128c39.7 0 72-32.3
+          72-72V296c0-39.7-32.3-72-72-72zm24 184c0 13.2-10.8 24-24
+          24H72c-13.2 0-24-10.8-24-24V216c0-75 61-136 136-136h8v48h-8c-48.5
+          0-88 39.5-88 88v56h104c13.2 0 24 10.8 24 24v112z"
+        />
+      </svg>
+      <blockquote class="relative text-base leading-6 hyphens-auto space-y-6">
+        {% for p in t[1].quote %}
+          <p>{{ p[1] }}</p>
+        {% endfor %}
+      </blockquote>
+      <div class="p-author h-card space-y-2 mt-6">
+        {% assign url = cloudinary.url | append: '/' | append: cloudinary.cloud_name %}
+        {% assign pid = cloudinary.public_id | append: '/' | append: t[1].photo %}
+        {% capture srcset %}
+          {% for i in (1..4) %}
+            {%- assign dpr = 'dpr_' | append: i | append: '.0' -%}
+            {%- assign res = i | append: 'x' -%}
+            {{ url }}/f_auto,{{ dpr }},w_60,c_fill,ar_1:1,g_auto/e_grayscale/{{ pid }} {{ res }},
+          {% endfor %}
+        {% endcapture %}
+        <img
+          srcset="{{ srcset }}"
+          src="{{ url }}/f_auto,dpr_1.0,w_60,c_fill,ar_1:1,g_auto/e_grayscale/{{ pid }}"
+          alt="{{ t[1].name }}"
+          class="u-photo mx-auto rounded-full"
+          height="60"
+          width="60"
+        />
+        <div class="space-y-2 text-center">
+          <div class="text-xs leading-4 font-medium lg:text-sm lg:leading-5">
+            <h3 class="p-name">
+              {{ t[1].name }}
+            </h3>
+            <p>
+              <span class="p-job-title">
+                {{ t[1].job-title }}
+              </span>
+              at
+              <a
+                href="{{ t[1].url }}"
+                class="p-org p-url underline hover:text-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:text-pink-700 transition ease-in-out duration-150"
+              >
+                {{ t[1].org }}
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
