@@ -123,7 +123,7 @@ I built the initial website as well as a lot of in-house tools.
 + Focused on front-end performance, scalability, and maintainability.
 
 
-## TESTIMONIALS
+## KIND WORDS
 
 > Stefan has been supporting the company for years. He played a key role in
 > developing our front-end further and always  delivered on time and with great
@@ -142,6 +142,16 @@ CEO at [tracdelight GmbH](https://www.tracdelight.io/)
 
 **Thomas Nitsche**  
 VP of Engineering at [Experteer GmbH](https://www.experteer.com/)
+
+> Stefan has been working for lovelybooks as a freelance senior front-end architect
+> for nearly one year now.
+>
+> It's a pleasure to work with him as he has done an excellent job, and I can highly
+> recommend Stefan for his technical expertise, his reliability and the pace he gets
+> his job done.
+
+**Ulrich Nitsche**  
+CTO at [aboutbooks GmbH](https://www.lovelybooks.de/)
 
 > We've been working with Stefan for over 14 years. He has played a key-role in
 > developing our front end. His reliability, professional expertise and his
