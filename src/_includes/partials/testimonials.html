@@ -39,14 +39,14 @@
           {% for i in (1..4) %}
             {%- assign dpr = 'dpr_' | append: i | append: '.0' -%}
             {%- assign res = i | append: 'x' -%}
-            {{ url }}/f_auto,{{ dpr }},w_60,c_fill,ar_1:1,g_auto/e_grayscale/{{ pid }} {{ res }},
+            {{ url }}/f_auto,{{ dpr }},w_60,c_fill,ar_1:1,g_auto/{{ pid }} {{ res }},
           {% endfor %}
         {% endcapture %}
         <img
           srcset="{{ srcset }}"
-          src="{{ url }}/f_auto,dpr_1.0,w_60,c_fill,ar_1:1,g_auto/e_grayscale/{{ pid }}"
+          src="{{ url }}/f_auto,dpr_1.0,w_60,c_fill,ar_1:1,g_auto/{{ pid }}"
           alt="{{ t[1].name }}"
-          class="u-photo mx-auto rounded-full"
+          class="u-photo mx-auto rounded-full grayscale"
           height="60"
           width="60"
           loading="lazy"
