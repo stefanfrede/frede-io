@@ -2,6 +2,7 @@
 permalink: service-worker.js
 eleventyExcludeFromCollections: true
 ---
+
 const VERSION = '{{ hash }}';
 
 const CACHE_KEYS = {
@@ -18,11 +19,11 @@ const PRE_CACHE_URLS = [
   '/404.html',
   '/index.html',
   '/cv_stefan_frede.pdf',
-  '/apple-touch-icon.png',
   '/favicon.ico',
-  '/favicon-16x16.png',
-  '/favicon-32x32.png',
   '/images/social-share.png',
+  '/images/icons/apple-touch-icon.png',
+  '/images/icons/favicon-16x16.png',
+  '/images/icons/favicon-32x32.png',
   '/images/icons/icon-72x72.png',
   '/images/icons/icon-96x96.png',
   '/images/icons/icon-128x128.png',
