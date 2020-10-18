@@ -1,3 +1,5 @@
+import 'alpinejs';
+
 function showTestimonial() {
   const t = document.querySelectorAll('.js-reviews > .h-review');
   const n = t[Math.floor(Math.random() * t.length)];
