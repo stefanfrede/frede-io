@@ -8,7 +8,6 @@
     bg-gradient-to-tr from-white to-gray-100 border-t-4 border-pink-600"
     x-data="{ open: false }"
     x-init="
-      () => document.body.classList.add('overflow-hidden');
       $watch('open', value => {
         if (value === true) {
         document.body.classList.add('overflow-hidden');
