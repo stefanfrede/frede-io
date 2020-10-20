@@ -4,7 +4,7 @@
   "description": "stefan frede's website",
   "engines": {
     "node": "12.x.x",
-    "npm": "7.x.x"
+    "npm": "6.x.x"
   },
   "main": "index.js",
   "repository": {
@@ -12,9 +12,6 @@
     "url": "git@gitlab.com:stefanfrede/website.git"
   },
   "keywords": [
-    "stefan frede",
-    "front-end",
-    "developer",
     "website"
   ],
   "author": {
