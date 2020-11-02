@@ -57,7 +57,7 @@ I built a web app to configure a locking system.
 + Handled state with Redux.
 + Cached requests to the REST API with Redux to increase performance.
 + Used the GitLab CI to make sure that the code was linted before merging into
-  the master.
+  the main branch.
 
 **Aboutbooks GmbH** (https://www.lovelybooks.de/)  
 *LovelyBooks is a meeting point for readers, authors, and publishers.*
@@ -79,7 +79,7 @@ I built a replacement for a jQuery-based tree component.
 + Built with Polymer 2 to fit into the rest of Arigos system.
 + Wrote unit tests with Mocha and Chai to improve the code quality.
 + Built a Docker container for GitLab CI to make sure that code ran against the
-  unit tests before merging into master.
+  unit tests before merging into the main branch.
 + Wrote documentation to enhance usability.
 
 I built an interface to interact via a WebSocket connection with the back-end
@@ -94,7 +94,7 @@ over a REST API.
   and reduce the chance for errors.
 + Wrote unit tests with Jest to improve the code quality.
 + Set-up GitLab CI to make sure that code ran against the unit tests before
-  merging into master.
+  merging into the main branch.
 + Wrote documentation to enhance usability.
 
 **50plus-Treff GmbH** (https://www.50plus-treff.de/)  
