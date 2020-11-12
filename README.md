@@ -1,13 +1,13 @@
 # Stefan Frede
 
-Ehrenbergstraße 16a  
-Scanbox #03611  
-10245 Berlin  
+Ehrenbergstraße 16a
+Scanbox #03611
+10245 Berlin
 Germany
 
-Phone: +49-2051-4057910  
-Fax: +49-2051-3254994  
-Email: contact@frede.io  
+Phone: +49-2051-4057910
+Fax: +49-2051-3254994
+Email: stefan@frede.io
 Web: www.frede.io
 
 [LinkedIn](https://www.linkedin.com/in/stefanfrede/) | [XING](https://www.xing.com/profile/Stefan_Frede2) | [GitHub](https://github.com/stefanfrede) | [GitLab](https://gitlab.com/stefanfrede)
@@ -33,7 +33,7 @@ frameworks can now easily be implemented using vanilla JavaScript.
 
 ## PROJECTS
 
-**T-Systems Multimedia Solutions GmbH** (https://www.t-systems.com)  
+**T-Systems Multimedia Solutions GmbH** (https://www.t-systems.com)
 *T-Systems is a German global IT services and consulting company.*
 
 I built accessible components which got integrated in a Salesforce application.
@@ -45,7 +45,7 @@ I built accessible components which got integrated in a Salesforce application.
 + Tested my components with browser accessibility tools to assure that I
   fulfilled the requirements.
 
-**Schweisthal Beschlag- und Schließtechnik GmbH** (https://www.schweisthal.de)  
+**Schweisthal Beschlag- und Schließtechnik GmbH** (https://www.schweisthal.de)
 *Schweisthal is a sales representative for locks, fittings, and security
 systems.*
 
@@ -59,7 +59,7 @@ I built a web app to configure a locking system.
 + Used the GitLab CI to make sure that the code was linted before merging into
   the main branch.
 
-**Aboutbooks GmbH** (https://www.lovelybooks.de/)  
+**Aboutbooks GmbH** (https://www.lovelybooks.de/)
 *LovelyBooks is a meeting point for readers, authors, and publishers.*
 
 I built promotions from publishers on the platform for new books.
@@ -71,7 +71,7 @@ I built promotions from publishers on the platform for new books.
 + Calculated a vertical rhythm based on the designs to enhance readability.
 + Cleaned up the JavaScript to reduce the size and decrease the page load time.
 
-**ARIGO Software GmbH** (https://www.arigo-software.de/)  
+**ARIGO Software GmbH** (https://www.arigo-software.de/)
 *Arigo is a specialist in building automation and tracking solutions.*
 
 I built a replacement for a jQuery-based tree component.
@@ -97,7 +97,7 @@ over a REST API.
   merging into the main branch.
 + Wrote documentation to enhance usability.
 
-**50plus-Treff GmbH** (https://www.50plus-treff.de/)  
+**50plus-Treff GmbH** (https://www.50plus-treff.de/)
 *50plus-Treff is a dating and friendship platform for everyone over 50.*
 
 I implemented the redesign to make the entire website mobile-friendly.
@@ -112,7 +112,7 @@ I implemented the redesign to make the entire website mobile-friendly.
 + Set-up a Webpack dev server for local development.
 + Implemented linting with eslint and stylelint to improve code quality.
 
-**Experteer GmbH** (https://www.experteer.com/)  
+**Experteer GmbH** (https://www.experteer.com/)
 *Experteer is the executive career service for leading professionals.*
 
 I built the initial website as well as a lot of in-house tools.
@@ -131,7 +131,7 @@ I built the initial website as well as a lot of in-house tools.
 >
 > I would definitely work with Stefan again and can highly recommend him.
 
-**Nina Zimmermann**  
+**Nina Zimmermann**
 CEO at [tracdelight GmbH](https://www.tracdelight.io/)
 
 > I have worked with Stefan on front-end projects for over ten years. His work
@@ -140,7 +140,7 @@ CEO at [tracdelight GmbH](https://www.tracdelight.io/)
 > It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to
 > recommend or work with him again.
 
-**Thomas Nitsche**  
+**Thomas Nitsche**
 VP of Engineering at [Experteer GmbH](https://www.experteer.com/)
 
 > Stefan has been working for lovelybooks as a freelance senior front-end architect
@@ -150,7 +150,7 @@ VP of Engineering at [Experteer GmbH](https://www.experteer.com/)
 > recommend Stefan for his technical expertise, his reliability and the pace he gets
 > his job done.
 
-**Ulrich Nitsche**  
+**Ulrich Nitsche**
 CTO at [aboutbooks GmbH](https://www.lovelybooks.de/)
 
 > We've been working with Stefan for over 14 years. He has played a key-role in
@@ -161,7 +161,7 @@ CTO at [aboutbooks GmbH](https://www.lovelybooks.de/)
 > We'll definitely continue to work with Stefan in the future, and can highly
 > recommend him.
 
-**Sven Exter**  
+**Sven Exter**
 CEO at [50plus-Treff GmbH ](https://www.50plus-treff.de/)
 
 
@@ -169,45 +169,45 @@ CEO at [50plus-Treff GmbH ](https://www.50plus-treff.de/)
 
 + T-Systems Multimedia Solutions GmbH
   Front-end Developer, 2020 – 2020
-+ 50plus-Treff GmbH  
++ 50plus-Treff GmbH
   Front-end Developer, 2010 – 2020
-+ Schweisthal Beschlag- und Schließtechnik GmbH  
++ Schweisthal Beschlag- und Schließtechnik GmbH
   Front-end Developer, 2019 – 2020
-+ Aboutbooks GmbH  
++ Aboutbooks GmbH
   Front-end Developer, 2019 – 2020
-+ ARIGO Software GmbH  
++ ARIGO Software GmbH
   Front-end Developer, 2017 – 2019
-+ tracdelight GmbH  
++ tracdelight GmbH
   Front-end Developer, 2016 – 2018
-+ Experteer GmbH  
++ Experteer GmbH
   Front-end Developer, 2005 – 2017
-+ 72sign  
++ 72sign
   Front-end Developer, 2013 – 2015
-+ Wildsterne GmbH  
++ Wildsterne GmbH
   Front-end Developer, 2011 – 2014
-+ Termine 24 GmbH  
++ Termine 24 GmbH
   Front-end Developer, 2012 – 2012
-+ Studio M.U.C.  
++ Studio M.U.C.
   Front-end Developer, 2011 – 2011
-+ Voycer Ag  
++ Voycer Ag
   Front-end Developer, 2011 – 2011
-+ CertoClav Sterilizer GmbH  
++ CertoClav Sterilizer GmbH
   Front-end Developer, 2010 – 2011
-+ Kickz AG  
++ Kickz AG
   Front-end Developer, 2004 – 2009
-+ TSG International AG  
++ TSG International AG
   Front-end Developer, 2006 – 2009
-+ spielraum GmbH  
++ spielraum GmbH
   Front-end Developer, 2004 – 2008
-+ Dirty Jerz GmbH  
++ Dirty Jerz GmbH
   Front-end Developer, 2006 – 2007
-+ Brodel Automation  
++ Brodel Automation
   Front-end Developer, 2004 – 2005
-+ esolut GmbH  
++ esolut GmbH
   Front-end Developer, 2003 – 2004
 
 
 ## EDUCATION
 
-Macromedia - Akademie für neue Medien  
-Digital Media Designer, 2003 
+Macromedia - Akademie für neue Medien
+Digital Media Designer, 2003
