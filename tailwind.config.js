@@ -1,9 +1,17 @@
+const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   future: 'all',
   purge: ['./src/**/*.html', './src/**/*.md'],
   theme: {
+    colors: {
+      black: colors.black,
+      gray: colors.gray,
+      pink: colors.pink,
+      teal: colors.teal,
+      white: colors.white,
+    },
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
@@ -18,24 +26,6 @@ module.exports = {
         '2px': '2px',
       },
     },
-    typography: {
-      default: {
-        css: {
-          a: {
-            color: 'hsl(220, 35%, 13%)',
-            '&:hover': {
-              color: 'hsl(331, 77%, 59%)',
-              transitionDuration: '150ms',
-              transitionProperty: 'color',
-              transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-            },
-          },
-        },
-      },
-    },
   },
-  variants: {
-    inset: ['responsive', 'focus'],
-  },
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
