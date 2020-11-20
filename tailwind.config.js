@@ -14,7 +14,11 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: [
+          '"Gotham Rounded SSm A"',
+          '"Gotham Rounded SSm B"',
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       gridTemplateColumns: {
         layout: 'minmax(14rem, 1fr) auto minmax(14rem, 1fr)',

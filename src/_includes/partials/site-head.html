@@ -1,6 +1,6 @@
 {% assign page_title = title | append: ' :: ' | append: site.name %}
 
-{% if site.name == title %} 
+{% if site.name == title %}
   {% assign page_title = title %}
 {% endif %}
 
@@ -51,12 +51,16 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
 <link rel="manifest" href="/manifest.json" />
 
-<link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />
+<link
+  rel="preload"
+  href="https://cloud.typography.com/6570052/6026832/css/fonts.css"
+  as="style"
+/>
 
 <!-- https://www.filamentgroup.com/lab/load-css-simpler/ -->
 <link
   rel="stylesheet"
-  href="https://rsms.me/inter/inter.css"
+  href="https://cloud.typography.com/6570052/6026832/css/fonts.css"
   media="print"
   onload="this.media='all'; this.onload=null;"
 />
