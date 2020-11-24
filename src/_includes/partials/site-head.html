@@ -51,12 +51,22 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
 <link rel="manifest" href="/manifest.json" />
 
+<!-- Preconnect to the font file origin -->
+<link
+  rel="preconnect"
+  href="https://cloud.typography.com"
+  crossorigin
+/>
+
+<!-- Preload the font stylesheet asynchronously with low priority -->
 <link
   rel="preload"
   href="https://cloud.typography.com/6570052/6026832/css/fonts.css"
   as="style"
 />
 
+<!-- Asynchronously load the font stylesheet and font file after the content has
+     been rendered with JavaScript -->
 <!-- https://www.filamentgroup.com/lab/load-css-simpler/ -->
 <link
   rel="stylesheet"
