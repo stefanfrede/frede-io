@@ -3,10 +3,10 @@
   publish = "dist"
 
 [context.production]
-  environment = { NODE_VERSION = "12.19.0", NODE_ENV = "production", RUBY_VERSION = "2.7.1" }
+  environment = { NODE_VERSION = "12.20.0", NODE_ENV = "production", RUBY_VERSION = "2.7.2" }
 
 [context.deploy-preview]
-  environment = { NODE_VERSION = "12.19.0", NODE_ENV = "production", RUBY_VERSION = "2.7.1" }
+  environment = { NODE_VERSION = "12.20.0", NODE_ENV = "production", RUBY_VERSION = "2.7.2" }
 
 [dev]
   command = "npm run dev"
@@ -25,3 +25,11 @@
   from = "https://frede.biz/*"
   to = "https://www.frede.io"
   status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self' https://res.cloudinary.com https://cloud.typography.com;"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
