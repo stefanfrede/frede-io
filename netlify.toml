@@ -17,14 +17,28 @@
   NODE_ENV = "development"
 
 [[redirects]]
+  from = "http://www.frede.biz/*"
+  to = "https://www.frede.io"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://www.frede.biz/*"
   to = "https://www.frede.io"
   status = 301
+  force = true
+
+[[redirects]]
+  from = "http://frede.biz/*"
+  to = "https://www.frede.io"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "https://frede.biz/*"
   to = "https://www.frede.io"
   status = 301
+  force = true
 
 [[headers]]
   for = "/*"
