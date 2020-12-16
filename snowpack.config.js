@@ -1,6 +1,6 @@
 module.exports = {
   mount: {
-    build: { url: '/', static: true },
+    'src/_site': { url: '/', static: true },
     'src/scripts': { url: '/scripts' },
     'src/styles': { url: '/styles' },
   },
@@ -11,13 +11,6 @@ module.exports = {
       {
         cmd: 'eleventy',
         watch: '$1 --watch',
-      },
-    ],
-    [
-      '@snowpack/plugin-optimize',
-      {
-        preloadModules: true,
-        target: 'es2020',
       },
     ],
   ],
@@ -31,5 +24,13 @@ module.exports = {
   devOptions: {
     hmrDelay: 300,
     open: 'none',
+  },
+  experiments: {
+    optimize: {
+      bundle: true,
+      minify: true,
+      target: 'es2020',
+    },
+    source: 'skypack',
   },
 };
