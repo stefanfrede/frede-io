@@ -33,6 +33,15 @@ frameworks can now easily be implemented using vanilla JavaScript.
 
 ## PROJECTS
 
+**Galeria Kaufhof GmbH** (https://www.galeria.de/)
+*Galeria Kaufhof is a German department store chain.*
+
+I maintained existing code and implemented change requests in a SalesForce Commerce Cloud environment.
+
++ Used HTML, CSS, and JavaScript to achieve my tasks.
++ Wrote unit tests with Jasmine to improve the code quality.
++ Helped implementing a ServiceWorker strategy.
+
 **T-Systems Multimedia Solutions GmbH** (https://www.t-systems.com)
 *T-Systems is a German global IT services and consulting company.*
 
@@ -167,6 +176,8 @@ CEO at [50plus-Treff GmbH ](https://www.50plus-treff.de/)
 
 ## WORK EXPERIENCE
 
++ Galeria Kaufhof GmbH
+  Front-end Developer, 2020 – 2020
 + T-Systems Multimedia Solutions GmbH
   Front-end Developer, 2020 – 2020
 + 50plus-Treff GmbH
