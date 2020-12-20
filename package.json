@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "stefan frede's website",
   "engines": {
-    "node": "12.x.x",
+    "node": "14.x.x",
     "npm": "6.x.x"
   },
   "main": "index.js",
@@ -40,9 +40,13 @@
     "*.{js,html}": "eslint --fix"
   },
   "scripts": {
+    "clean": "rimraf src/_site",
     "serve": "serve --no-clipboard --listen 8080 dist",
-    "dev": "snowpack dev",
-    "build": "snowpack build",
+    "dev": "run-s clean dev:*",
+    "dev:snowpack": "snowpack dev",
+    "build": "run-s clean build:*",
+    "build:snowpack": "snowpack build",
+    "build:sw": "workbox generateSW",
     "lint": "run-s lint:*",
     "lint:eslint": "eslint --ext .js,.html src/",
     "lint:stylelint": "stylelint src/**/*.js src/**/*.html src/**/*.css",
@@ -57,8 +61,8 @@
     "@commitlint/config-conventional": "^11.0.0",
     "babel-eslint": "^10.1.0",
     "browserslist": "^4.16.0",
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^7.0.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-html": "^6.1.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.0",
@@ -83,7 +87,9 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.2.1",
     "postcss-cli": "^8.3.1",
-    "snowpack": "^2.18.4",
-    "tailwindcss": "^2.0.2"
+    "rimraf": "^3.0.2",
+    "snowpack": "^2.18.5",
+    "tailwindcss": "^2.0.2",
+    "workbox-cli": "^6.0.2"
   }
 }
