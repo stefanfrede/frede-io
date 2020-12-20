@@ -2,7 +2,6 @@ image: node:14.15.3
 
 stages:
   - setup
-  - deploy
 
 cache:
   paths:
@@ -11,29 +10,7 @@ cache:
 setup:
   stage: setup
   script:
-    - npm setup
+    - npm run setup
   artifacts:
     paths:
       - node_modules/
-
-deploy_branch:
-  stage: deploy
-  script:
-    - npm install netlify-cli -g
-    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --alias "$CI_MERGE_REQUEST_ID" --dir dist/
-  artifacts:
-    paths:
-      - dist
-  except:
-    - master
-
-deploy_master:
-  stage: deploy
-  script:
-    - npm install netlify-cli -g
-    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir dist/
-  artifacts:
-    paths:
-      - dist
-  only:
-    - master
