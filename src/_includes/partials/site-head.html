@@ -76,3 +76,26 @@
 />
 
 <link rel="stylesheet" href="/styles/index.css" />
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{ hcard.addr.locality }}",
+      "addressRegion": "{{ hcard.addr.region }}",
+      "postalCode": "{{ hcard.addr.postal-code }}",
+      "streetAddress": "{{ hcard.addr.street-address }} - {{ hcard.addr.extended-address }}"
+    },
+    "email": "mailto:{{ hcard.email }}",
+    "image":
+"https://res.cloudinary.com/stefanfrede/f_auto,dpr_1.0,w_160/v1607804656/frede.io/{{
+hcard.photo }}",
+    "jobTitle": "{{ hcard.job-title }}",
+    "name": "{{ hcard.name }}",
+    "telephone": "{{ hcard.tel }}",
+    "faxNumber": "{{ hcard.tel-fax }}",
+    "url": "{{ hcard.url }}"
+  }
+</script>
