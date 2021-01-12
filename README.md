@@ -25,7 +25,7 @@ frameworks can now easily be implemented using vanilla JavaScript.
 + Responsive Web Design
 + Accessibility and Progressive Enhancement
 + Vanilla JavaScript
-+ Web Components, LitElement, and Vue
++ Web Components, LitElement, and Vue.js
 + Jest, Mocha, and Chai
 + Redux and Redux-Saga
 + Webpack, Git, and Continuous Integration
