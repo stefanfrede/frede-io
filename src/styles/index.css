@@ -2,10 +2,145 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@layer components {
+  #goo-svg {
+    height: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    width: 175px;
+  }
+
+  #goo-svg * {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  /**
+   * only animate if the user hasn't specified a preference for reduced motion
+   */
+
+  /**
+   * https://css-tricks.com/introduction-reduced-motion-media-query/
+   */
+  @media screen and (prefers-reduced-motion: no-preference) {
+    /**
+     * only animate if transform-box is supported to reduce cross browser
+     * transform issues in old browsers
+     */
+
+    /**
+     * https://caniuse.com/?search=transform-box
+     */
+    @supports (transform-box: fill-box) {
+      .goo-start {
+        animation: goo-start 4s ease-out both;
+      }
+
+      @keyframes goo-start {
+        from {
+          transform: translateY(-30px);
+        }
+        to {
+          transform: translateY(-10px);
+        }
+      }
+
+      .goo-body {
+        animation: goo-down 8s ease-out both 2s;
+      }
+
+      @keyframes goo-down {
+        from {
+          transform: translateY(-30px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      .goo-drop {
+        animation: goo-drip 8s linear both 1s;
+      }
+
+      .goo-light {
+        animation: goo-opacity 8s linear both 1s, goo-drip 8s linear both 1s;
+      }
+
+      @keyframes goo-opacity {
+        0% {
+          opacity: 0;
+        }
+        70% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes goo-drip {
+        0% {
+          transform: translateY(-100px) scaleX(2.5);
+        }
+        85% {
+          transform: translateY(-6px);
+        }
+        91% {
+          animation-timing-function: ease-in;
+          transform: translateY(-1px) scaleX(1);
+        }
+        100% {
+          transform: translateY(1000px);
+        }
+      }
+
+      .goo-drop.one,
+      .goo-light.one {
+        animation-delay: 2s;
+      }
+
+      .goo-drop.three {
+        animation-delay: 4s;
+      }
+
+      .goo-drop-end {
+        animation: goo-reset 8s linear both 8s;
+      }
+
+      .goo-light-end {
+        animation: goo-opacity 8s linear both 8s, goo-reset 8s linear both 8s;
+      }
+
+      .goo-drop-end.one,
+      .goo-light-end.one {
+        animation-delay: 9s;
+      }
+
+      .goo-drop-end.three {
+        animation-delay: 11s;
+      }
+
+      @keyframes goo-reset {
+        0% {
+          transform: translateY(-100px) scaleX(2.5);
+        }
+        80% {
+          animation-timing-function: cubic-bezier(0.18, 0.74, 0.48, 1.45);
+          transform: translateY(-20px) scale(1);
+        }
+        100% {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
 @layer utilities {
   .hyphens-auto {
     hyphens: auto;
   }
+
   .grayscale {
     filter: grayscale(100%);
   }
