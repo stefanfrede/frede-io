@@ -176,15 +176,15 @@ CEO at [50plus-Treff GmbH ](https://www.50plus-treff.de/)
 
 ## WORK EXPERIENCE
 
-+ Galeria Kaufhof GmbH
++ Galeria Kaufhof GmbH  
   Front-end Developer, 2020 – 2020
 + T-Systems Multimedia Solutions GmbH
   Front-end Developer, 2020 – 2020
-+ 50plus-Treff GmbH
++ 50plus-Treff GmbH  
   Front-end Developer, 2010 – 2020
-+ Schweisthal Beschlag- und Schließtechnik GmbH
++ Schweisthal Beschlag- und Schließtechnik GmbH  
   Front-end Developer, 2019 – 2020
-+ Aboutbooks GmbH
++ Aboutbooks GmbH  
   Front-end Developer, 2019 – 2020
 + ARIGO Software GmbH
   Front-end Developer, 2017 – 2019
