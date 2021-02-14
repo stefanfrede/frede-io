@@ -222,5 +222,3 @@ CEO at [50plus-Treff GmbH ](https://www.50plus-treff.de/)
 
 Macromedia - Akademie für neue Medien
 Digital Media Designer, 2003
-
-Test
