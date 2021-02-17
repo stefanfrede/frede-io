@@ -171,8 +171,17 @@ CTO at [aboutbooks GmbH](https://www.lovelybooks.de/)
 > recommend him.
 
 **Sven Exter**
-CEO at [50plus-Treff GmbH ](https://www.50plus-treff.de/)
+CEO at [50plus-Treff GmbH](https://www.50plus-treff.de/)
 
+> Stefan has left a strong and positive impression on us. He managed to
+> familiarize himself with our complex codebase in a short time and become a
+> productive member of the team.
+>
+> We can therefore fully recommend him and would be happy to work with him again
+> in the future!
+
+**Dr. Robert Giacinto**
+Head of Software Engineering at [Galeria Karstadt Kaufhof GmbH](http://www.galeria.de/)
 
 ## WORK EXPERIENCE
 
