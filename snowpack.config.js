@@ -1,6 +1,6 @@
 module.exports = {
   mount: {
-    'src/_site': { url: '/', static: true },
+    'src/_site': { url: '/', static: true, resolve: false },
     'src/scripts': { url: '/scripts' },
     'src/styles': { url: '/styles' },
   },
@@ -14,8 +14,9 @@ module.exports = {
       },
     ],
   ],
-  installOptions: {
+  packageOptions: {
     NODE_ENV: true,
+    source: 'remote',
   },
   buildOptions: {
     clean: true,
@@ -25,12 +26,9 @@ module.exports = {
     hmrDelay: 300,
     open: 'none',
   },
-  experiments: {
-    optimize: {
-      bundle: true,
-      minify: true,
-      target: 'es2020',
-    },
-    source: 'skypack',
+  optimize: {
+    bundle: true,
+    minify: true,
+    target: 'es2020',
   },
 };
