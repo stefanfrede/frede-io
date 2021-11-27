@@ -1,22 +1,15 @@
-module.exports = {
+export default {
   mount: {
-    'src/_site': { url: '/', static: true, resolve: false },
+    'src/_site': { url: '/', static: true },
     'src/scripts': { url: '/scripts' },
     'src/styles': { url: '/styles' },
   },
   plugins: [
     '@snowpack/plugin-postcss',
-    [
-      '@snowpack/plugin-run-script',
-      {
-        cmd: 'eleventy',
-        watch: '$1 --watch',
-      },
-    ],
+    '@jadex/snowpack-plugin-tailwindcss-jit',
   ],
   packageOptions: {
     NODE_ENV: true,
-    source: 'remote',
   },
   buildOptions: {
     clean: true,

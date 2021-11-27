@@ -9,6 +9,9 @@ dist
 # secrets
 .env
 
+# cache
+.eslintcache
+
 # logs
 *.log
 report.html

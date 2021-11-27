@@ -1,4 +1,8 @@
-import 'alpinejs';
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
 
 function showTestimonial() {
   const t = document.querySelectorAll('.js-reviews > .h-review');
