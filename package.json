@@ -1,6 +1,6 @@
 {
   "name": "frede-io",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "stefan frede's website",
   "engines": {
     "node": "16.x.x",
@@ -36,10 +36,10 @@
   "scripts": {
     "clean": "rimraf src/_site",
     "serve": "serve --no-clipboard --listen 8080 dist",
-    "dev": "cross-env NODE_ENV=development run-s clean dev:*",
+    "dev": "run-s clean dev:*",
     "dev:eleventy": "npx @11ty/eleventy",
     "dev:snowpack": "snowpack dev",
-    "build": "cross-env NODE_ENV=production run-s clean build:*",
+    "build": "run-s clean build:*",
     "build:eleventy": "npx @11ty/eleventy",
     "build:snowpack": "snowpack build",
     "build:sw": "workbox generateSW",
@@ -65,7 +65,6 @@
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.4.0",
     "browserslist": "^4.16.3",
-    "cross-env": "^7.0.3",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-html": "^6.1.1",
