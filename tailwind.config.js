@@ -1,5 +1,4 @@
 const colors = require('tailwindcss/colors');
-const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: ['./src/**/*.html', './src/**/*.md'],
@@ -13,13 +12,6 @@ module.exports = {
       white: colors.white,
     },
     extend: {
-      fontFamily: {
-        sans: [
-          '"Gotham Rounded SSm A"',
-          '"Gotham Rounded SSm B"',
-          ...defaultTheme.fontFamily.sans,
-        ],
-      },
       gridTemplateColumns: {
         layout: 'minmax(14rem, 1fr) auto minmax(14rem, 1fr)',
       },

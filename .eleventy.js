@@ -6,7 +6,6 @@ module.exports = function (config) {
   });
 
   // Static assets to pass through
-  config.addPassthroughCopy('./src/fonts');
   config.addPassthroughCopy('./src/images');
   config.addPassthroughCopy('./src/cv_stefan_frede.pdf');
   config.addPassthroughCopy('./src/favicon.ico');
