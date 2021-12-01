@@ -16,7 +16,6 @@ export default {
     out: 'dist',
   },
   devOptions: {
-    hmrDelay: 300,
     open: 'none',
   },
   optimize: {
