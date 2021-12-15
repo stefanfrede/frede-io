@@ -14,8 +14,7 @@
     "allowImportExportEverywhere": true,
     "ecmaFeatures": {
       "impliedStrict": true
-    },
-    "requireConfigFile": false
+    }
   },
   "env": {
     "browser": true,
