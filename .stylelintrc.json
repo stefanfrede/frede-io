@@ -4,23 +4,27 @@
     "stylelint-config-prettier"
   ],
   "plugins": [
+    "stylelint-no-unsupported-browser-features",
     "stylelint-order"
   ],
   "rules": {
     "no-descending-specificity": null,
+    "plugin/no-unsupported-browser-features": [true, {
+      "severity": "warning"
+    }],
     "order/order": [
       "custom-properties",
       "declarations"
     ],
     "order/properties-alphabetical-order": true,
-    "at-rule-no-unknown": [ true, {
-      ignoreAtRules: [
-        'apply',
-        'layer',
-        'responsive',
-        'screen',
-        'tailwind',
-        'variants'
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "apply",
+        "layer",
+        "responsive",
+        "screen",
+        "tailwind",
+        "variants"
       ]
     }]
   }

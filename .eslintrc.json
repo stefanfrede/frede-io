@@ -4,6 +4,7 @@
     "eslint:recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
+    "plugin:compat/recommended",
     "plugin:prettier/recommended"
   ],
   "parser": "@babel/eslint-parser",
