@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.html', './src/**/*.md'],
@@ -10,7 +11,15 @@ module.exports = {
       teal: colors.teal,
       white: colors.white,
     },
+    fontWeight: {
+      medium: 470,
+      semibold: 620,
+      bold: 760,
+    },
     extend: {
+      fontFamily: {
+        sans: ['Pangram Sans Rounded', ...defaultTheme.fontFamily.sans],
+      },
       gridTemplateColumns: {
         layout: 'minmax(14rem, 1fr) auto minmax(14rem, 1fr)',
       },
