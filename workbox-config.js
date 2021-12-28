@@ -16,27 +16,10 @@ module.exports = {
       },
     },
     {
-      urlPattern: /^(https:\/\/cloud\.typography\.com)/,
+      urlPattern: /\.(?:otf|ttf|woff|woff2)$/,
       handler: 'CacheFirst',
       options: {
-        cacheName: 'typography-stylesheet',
-        cacheableResponse: {
-          statuses: [0, 200],
-        },
-        expiration: {
-          maxAgeSeconds: 60 * 60 * 24 * 365,
-          maxEntries: 30,
-        },
-      },
-    },
-    {
-      urlPattern: /^(https:\/\/res\.cloudinary\.com)/,
-      handler: 'CacheFirst',
-      options: {
-        cacheName: 'cloudinary-images',
-        cacheableResponse: {
-          statuses: [0, 200],
-        },
+        cacheName: 'fonts',
         expiration: {
           maxAgeSeconds: 30 * 24 * 60 * 60,
           maxEntries: 30,

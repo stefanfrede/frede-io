@@ -25,8 +25,8 @@
   },
   "homepage": "https://www.frede.io",
   "lint-staged": {
-    "*.{js,html}": "eslint --cache --fix",
-    "*.{css,html}": "stylelint --fix"
+    "*.js": "eslint --cache --fix",
+    "*.css": "stylelint --fix"
   },
   "scripts": {
     "clean": "rimraf src/_site",
