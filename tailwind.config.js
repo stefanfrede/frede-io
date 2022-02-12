@@ -1,16 +1,8 @@
-const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.html', './src/**/*.md'],
   theme: {
-    colors: {
-      black: colors.black,
-      gray: colors.gray,
-      pink: colors.pink,
-      teal: colors.teal,
-      white: colors.white,
-    },
     fontWeight: {
       medium: 470,
       semibold: 620,
@@ -31,5 +23,6 @@ module.exports = {
       },
     },
   },
+  variants: {},
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
