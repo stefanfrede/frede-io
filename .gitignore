@@ -11,6 +11,7 @@ dist
 
 # cache
 .eslintcache
+.stylelintcache
 
 # logs
 *.log

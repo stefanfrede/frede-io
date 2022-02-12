@@ -1,27 +1,15 @@
-{% assign page_title = title | append: ' :: ' | append: site.name %}
-
-{% if site.name == title %}
-  {% assign page_title = title %}
-{% endif %}
-
-{% assign site_title = site.name %}
-{% assign current_url = site.url | append: page.url %}
-
-{% unless social_image %}
-  {% assign social_image = site.url | append: '/images/social-share.png' %}
-{% endunless %}
-
-{% if meta.title %}
-  {% assign page_title = meta.title %}
-{% endif %}
+{% assign page_title = title | append: ' :: ' | append: site.name %} {% if
+site.name == title %} {% assign page_title = title %} {% endif %} {% assign
+site_title = site.name %} {% assign current_url = site.url | append: page.url %}
+{% unless social_image %} {% assign social_image = site.url | append:
+'/images/social-share.png' %} {% endunless %} {% if meta.title %} {% assign
+page_title = meta.title %} {% endif %}
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<title>
-  {{ page_title }}
-</title>
+<title>{{ page_title }}</title>
 
 <link rel="canonical" href="{{ current_url }}" />
 
@@ -31,47 +19,59 @@
 <meta property="og:url" content="{{ current_url }}" />
 
 {% if social_image %}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="{{ social_image }}" />
-  <meta name="twitter:image" content="{{ social_image }}" />
-  <meta property="og:image:alt" content="Page image for {{ site.name }}" />
-  <meta name="twitter:image:alt" content="Page image for {{ site.name }}" />
-{% endif %}
-
-{% if meta.desc %}
-  <meta name="description" content="{{ meta.desc }}" />
-  <meta name="twitter:description" content="{{ meta.desc }}" />
-  <meta property="og:description" content="{{ meta.desc }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="{{ social_image }}" />
+<meta name="twitter:image" content="{{ social_image }}" />
+<meta property="og:image:alt" content="Page image for {{ site.name }}" />
+<meta name="twitter:image:alt" content="Page image for {{ site.name }}" />
+{% endif %} {% if meta.desc %}
+<meta name="description" content="{{ meta.desc }}" />
+<meta name="twitter:description" content="{{ meta.desc }}" />
+<meta property="og:description" content="{{ meta.desc }}" />
 {% endif %}
 
 <meta name="theme-color" content="#e74694" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/images/icons/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/images/icons/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/images/icons/favicon-16x16.png"
+/>
 <link rel="manifest" href="/manifest.json" />
 
 <link rel="stylesheet" href="/styles/index.css" />
 
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "{{ hcard.addr.locality }}",
-      "addressRegion": "{{ hcard.addr.region }}",
-      "postalCode": "{{ hcard.addr.postal-code }}",
-      "streetAddress": "{{ hcard.addr.street-address }} - {{ hcard.addr.extended-address }}"
-    },
-    "email": "mailto:{{ hcard.email }}",
-    "image":
-"https://res.cloudinary.com/stefanfrede/f_auto,dpr_1.0,w_160/v1607804656/frede.io/{{
-hcard.photo }}",
-    "jobTitle": "{{ hcard.job-title }}",
-    "name": "{{ hcard.name }}",
-    "telephone": "{{ hcard.tel }}",
-    "faxNumber": "{{ hcard.tel-fax }}",
-    "url": "{{ hcard.url }}"
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ hcard.addr.locality }}",
+        "addressRegion": "{{ hcard.addr.region }}",
+        "postalCode": "{{ hcard.addr.postal-code }}",
+        "streetAddress": "{{ hcard.addr.street-address }} - {{ hcard.addr.extended-address }}"
+      },
+      "email": "mailto:{{ hcard.email }}",
+      "image":
+  "https://res.cloudinary.com/stefanfrede/f_auto,dpr_1.0,w_160/v1607804656/frede.io/{{
+  hcard.photo }}",
+      "jobTitle": "{{ hcard.job-title }}",
+      "name": "{{ hcard.name }}",
+      "telephone": "{{ hcard.tel }}",
+      "faxNumber": "{{ hcard.tel-fax }}",
+      "url": "{{ hcard.url }}"
+    }
 </script>
