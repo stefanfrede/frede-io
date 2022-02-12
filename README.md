@@ -10,7 +10,7 @@ Fax: +49-2051-3254994
 Email: stefan@frede.io
 Web: www.frede.io
 
-[LinkedIn](https://www.linkedin.com/in/stefanfrede/) | [XING](https://www.xing.com/profile/Stefan_Frede2) | [GitHub](https://github.com/stefanfrede) | [GitLab](https://gitlab.com/stefanfrede)
+[LinkedIn](https://www.linkedin.com/in/stefanfrede/) | [XING](https://www.xing.com/profile/Stefan_Frede2) | [GitHub](https://github.com/stefanfrede)
 
 I'm a front-end developer with a focus on HTML, CSS, Accessibility and
 Progressive Enhancement and I like to limit myself to browser APIs whenever
