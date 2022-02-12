@@ -32,6 +32,7 @@
   },
   "homepage": "https://www.frede.io/",
   "lint-staged": {
+    "*.html": "prettier --write",
     "*.js": "eslint --cache --fix",
     "*.css": "stylelint --fix"
   },
