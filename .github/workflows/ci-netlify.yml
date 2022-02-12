@@ -35,7 +35,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v8
         with:
           urls: |
-            ${{ steps.netlify.outputs.url }}
+            ${{ steps.waitFor200.outputs.url }}
           budgetPath: ./budget.json
           uploadArtifacts: true
           temporaryPublicStorage: true
