@@ -9,10 +9,17 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:stefanfrede/website.git"
+    "url": "git@github.com:stefanfrede/frede-io.git"
   },
   "keywords": [
-    "website"
+    "alpinejs",
+    "eleventy",
+    "jamstack",
+    "liquidjs",
+    "netlify",
+    "pwa",
+    "snowpack",
+    "tailwindcss"
   ],
   "author": {
     "name": "Stefan Frede",
@@ -21,9 +28,9 @@
   "license": "UNLICENSED",
   "private": true,
   "bugs": {
-    "url": "https://gitlab.com/stefanfrede/website/issues"
+    "url": "https://github.com/stefanfrede/frede-io/issues"
   },
-  "homepage": "https://www.frede.io",
+  "homepage": "https://www.frede.io/",
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.css": "stylelint --fix"
