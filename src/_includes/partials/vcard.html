@@ -1,45 +1,35 @@
 <aside class="flex flex-col items-center lg:items-start">
   <address class="h-card grid gap-6 not-italic">
     <header class="sm:text-center lg:text-left">
-      <h2
-        class="p-name text-2xl leading-8 font-bold sm:text-3xl sm:leading-9"
-      >
+      <h2 class="p-name text-2xl font-bold leading-8 sm:text-3xl sm:leading-9">
         {{ hcard.name }}
       </h2>
       <p
-        class="p-job-title text-lg leading-7 text-pink-600 font-semibold tracking-wide"
+        class="p-job-title text-lg font-semibold leading-7 tracking-wide text-pink-600"
       >
         {{ hcard.job-title }}
       </p>
     </header>
     <div class="grid gap-6 text-base leading-6 sm:grid-cols-2 lg:grid-cols-1">
       <p class="h-adr inline-flex flex-col sm:justify-between lg:justify-start">
-        <span class="p-street-address">
-          {{ hcard.addr.street-address }}
-        </span>
+        <span class="p-street-address"> {{ hcard.addr.street-address }} </span>
         <span class="p-extended-address">
           {{ hcard.addr.extended-address }}
         </span>
         <span>
-          <span class="p-postal-code">
-            {{ hcard.addr.postal-code }}
-          </span>
-          <span class="p-locality">
-            {{ hcard.addr.locality }}
-          </span>
+          <span class="p-postal-code"> {{ hcard.addr.postal-code }} </span>
+          <span class="p-locality"> {{ hcard.addr.locality }} </span>
         </span>
-        <span class="p-country-name">
-          {{ hcard.addr.country-name }}
-        </span>
+        <span class="p-country-name"> {{ hcard.addr.country-name }} </span>
       </p>
       <p class="inline-flex flex-col">
         <a
-          class="p-tel flex items-center group underline hover:text-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:text-pink-700 transition ease-in-out duration-150"
+          class="p-tel group focus:shadow-outline-pink flex items-center underline transition duration-150 ease-in-out hover:text-pink-500 focus:border-pink-700 focus:outline-none active:text-pink-700"
           href="tel:{{ hcard.tel }}"
         >
           <svg
             title="phone"
-            class="flex-shrink-0 h-5 w-5 text-gray-700 group-hover:text-pink-500 transition ease-in-out duration-150"
+            class="h-5 w-5 flex-shrink-0 text-gray-700 transition duration-150 ease-in-out group-hover:text-pink-500"
             aria-labelledby="fa-phone"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
@@ -59,17 +49,15 @@
               98.19 42.11z"
             />
           </svg>
-          <span class="ml-2">
-            {{ hcard.tel }}
-          </span>
+          <span class="ml-2"> {{ hcard.tel }} </span>
         </a>
         <a
-          class="p-tel flex items-center mt-2 group underline hover:text-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:text-pink-700 transition ease-in-out duration-150"
+          class="p-tel group focus:shadow-outline-pink mt-2 flex items-center underline transition duration-150 ease-in-out hover:text-pink-500 focus:border-pink-700 focus:outline-none active:text-pink-700"
           href="tel:{{ hcard.tel-fax }}"
         >
           <svg
             title="fax"
-            class="flex-shrink-0 h-5 w-5 text-gray-700 group-hover:text-pink-500 transition ease-in-out duration-150"
+            class="h-5 w-5 flex-shrink-0 text-gray-700 transition duration-150 ease-in-out group-hover:text-pink-500"
             aria-labelledby="fa-fax"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
@@ -95,17 +83,15 @@
               16-16v-32a16 16 0 0 0-16-16z"
             />
           </svg>
-          <span class="ml-2">
-            {{ hcard.tel-fax }}
-          </span>
+          <span class="ml-2"> {{ hcard.tel-fax }} </span>
         </a>
         <button
           @click="open = true"
-          class="u-email flex items-center mt-2 group underline hover:text-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:text-pink-700 transition ease-in-out duration-150"
+          class="u-email group focus:shadow-outline-pink mt-2 flex items-center underline transition duration-150 ease-in-out hover:text-pink-500 focus:border-pink-700 focus:outline-none active:text-pink-700"
         >
           <svg
             title="paper-plane"
-            class="flex-shrink-0 h-5 w-5 text-gray-700 group-hover:text-pink-500 transition ease-in-out duration-150"
+            class="h-5 w-5 flex-shrink-0 text-gray-700 transition duration-150 ease-in-out group-hover:text-pink-500"
             aria-labelledby="fa-paper-plane"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
@@ -123,11 +109,11 @@
               48l-59.4 387.3z"
             />
           </svg>
-          <span class="inline-flex items-center ml-2">
+          <span class="ml-2 inline-flex items-center">
             stefan
             <svg
               title="@"
-              class="flex-shrink-0 h-4 w-4 mx-2px"
+              class="mx-2px h-4 w-4 flex-shrink-0"
               aria-labelledby="fa-at-sign"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
@@ -158,12 +144,12 @@
           </span>
         </button>
         <a
-          class="u-url flex items-center mt-2 group underline hover:text-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:text-pink-700 transition ease-in-out duration-150"
+          class="u-url group focus:shadow-outline-pink mt-2 flex items-center underline transition duration-150 ease-in-out hover:text-pink-500 focus:border-pink-700 focus:outline-none active:text-pink-700"
           href="https://{{ hcard.url }}"
         >
           <svg
             title="window"
-            class="flex-shrink-0 h-5 w-5 text-gray-700 group-hover:text-pink-500 transition ease-in-out duration-150"
+            class="h-5 w-5 flex-shrink-0 text-gray-700 transition duration-150 ease-in-out group-hover:text-pink-500"
             aria-labelledby="fa-window"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
@@ -181,29 +167,25 @@
               6H54c-3.3 0-6-2.7-6-6V192h416v234z"
             />
           </svg>
-          <span class="ml-2">
-            {{ hcard.url }}
-          </span>
+          <span class="ml-2"> {{ hcard.url }} </span>
         </a>
       </p>
     </div>
   </address>
-  <div class="inline-flex flex-col items-center mt-8">
-
+  <div class="mt-8 inline-flex flex-col items-center">
     <a
-      class="inline-flex items-center px-6 py-3 border border-transparent
-      text-base font-semibold rounded-md shadow-sm text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+      class="inline-flex items-center rounded-md border border-transparent bg-pink-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
       href="{{ hcard.download }}"
       download
     >
-    <svg
-      class="-ml-1 mr-3 h-5 w-5"
-      aria-hidden="true"
-      focusable="false"
-      role="img"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 384 512"
-        >
+      <svg
+        class="-ml-1 mr-3 h-5 w-5"
+        aria-hidden="true"
+        focusable="false"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 512"
+      >
         <path
           fill="currentColor"
           d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0
